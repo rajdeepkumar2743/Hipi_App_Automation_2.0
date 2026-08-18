@@ -1,0 +1,55 @@
+2026-08-12 14:20:56 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 14:20:56 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 14:20:56 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 14:20:56 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 14:20:56 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 14:20:56 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 14:20:56 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 14:20:56 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 14:20:56 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 14:20:59 [INFO    ] driver_factory.py:108 — App launched by driver. Waiting for stabilization...
+2026-08-12 14:21:01 [INFO    ] driver_factory.py:111 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-12 14:21:01 [INFO    ] conftest.py:238 — Driver created successfully.
+2026-08-12 14:21:06 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-12 14:21:17 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-12 14:21:18 [INFO    ] conftest.py:153 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-12 14:21:18 [INFO    ] conftest.py:251 — DRIVER SETUP COMPLETE
+2026-08-12 14:21:18 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-12 14:21:18 [INFO    ] base_test.py:58 — login_and_reach_feed: START
+2026-08-12 14:21:18 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-12 14:21:18 [INFO    ] login_page.py:590 — ========== LOGIN FLOW START ==========
+2026-08-12 14:21:19 [INFO    ] login_page.py:34 — Opening profile tab
+2026-08-12 14:21:20 [INFO    ] login_page.py:44 — Profile tab open attempt 1/2
+2026-08-12 14:21:20 [INFO    ] base_page.py:110 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.view.View").childSelector(new UiSelector().text("Profile")).clickable(true)')
+2026-08-12 14:21:31 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:21:31 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_142131.png
+2026-08-12 14:21:31 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_142131.xml
+2026-08-12 14:21:31 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 14:21:43 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:21:44 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_142143.png
+2026-08-12 14:21:44 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_142144.xml
+2026-08-12 14:21:44 [WARNING ] login_page.py:139 — Attempt 1 did not reach the login sheet, recovering and retrying...
+2026-08-12 14:21:44 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 14:21:47 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 14:21:49 [INFO    ] login_page.py:44 — Profile tab open attempt 2/2
+2026-08-12 14:21:50 [INFO    ] base_page.py:110 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.view.View").childSelector(new UiSelector().text("Profile")).clickable(true)')
+2026-08-12 14:22:01 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:22:02 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_142201.png
+2026-08-12 14:22:02 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_142202.xml
+2026-08-12 14:22:02 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 14:22:15 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:22:15 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_142215.png
+2026-08-12 14:22:15 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_142215.xml
+2026-08-12 14:22:15 [WARNING ] login_page.py:139 — Attempt 2 did not reach the login sheet, recovering and retrying...
+2026-08-12 14:22:15 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 14:22:18 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 14:22:20 [ERROR   ] login_page.py:152 — Unable to open profile tab / reach login sheet after 2 attempts
+2026-08-12 14:22:21 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/profile_tab_failed_20260812_142220.png
+2026-08-12 14:22:21 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/profile_tab_failed_20260812_142221.xml
+2026-08-12 14:22:21 [ERROR   ] login_page.py:725 — Login flow failed: Unable to open profile tab / reach login sheet after 2 attempts
+2026-08-12 14:22:22 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/login_failed_20260812_142221.png
+2026-08-12 14:22:23 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/login_failed_20260812_142222.xml
+2026-08-12 14:22:28 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/test_add_comment_20260812_142223.png
+2026-08-12 14:22:29 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/test_add_comment_20260812_142228.xml
+2026-08-12 14:22:29 [ERROR   ] conftest.py:355 — Test FAILED: test_add_comment
+2026-08-12 14:22:29 [INFO    ] conftest.py:262 — Closing driver session.

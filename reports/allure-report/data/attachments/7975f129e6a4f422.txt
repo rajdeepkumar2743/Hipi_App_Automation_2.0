@@ -1,0 +1,15 @@
+2026-08-18 13:36:06 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-18 13:36:06 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-18 13:36:06 [INFO    ] login_page.py:556 — Validating home page
+2026-08-18 13:36:07 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-18 13:36:07 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-18 13:36:07 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-18 13:36:07 [INFO    ] feed_page.py:253 — Opening comment sheet
+2026-08-18 13:36:08 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(1)')
+2026-08-18 13:36:12 [INFO    ] feed_page.py:267 — Comment sheet opened
+2026-08-18 13:36:18 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]")
+2026-08-18 13:36:24 [INFO    ] feed_page.py:287 — Closing comment sheet
+2026-08-18 13:36:31 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivClose' or (@content-desc='Close' and @package='com.zee5.hipi')]")
+2026-08-18 13:36:33 [INFO    ] base_page.py:277 — Element ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]") disappeared.
+2026-08-18 13:36:33 [INFO    ] feed_page.py:318 — Comment sheet closed
+2026-08-18 13:36:33 [INFO    ] test_feed.py:543 — TEST PASSED: Comment input visible

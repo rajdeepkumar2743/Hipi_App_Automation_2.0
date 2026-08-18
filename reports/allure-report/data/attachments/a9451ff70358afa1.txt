@@ -1,0 +1,78 @@
+2026-08-17 16:59:52 [INFO    ] conftest.py:326 — ==================================================
+2026-08-17 16:59:52 [INFO    ] conftest.py:327 — DRIVER SETUP START
+2026-08-17 16:59:52 [INFO    ] conftest.py:328 — ==================================================
+2026-08-17 16:59:52 [INFO    ] conftest.py:158 — Driver creation attempt 1/3
+2026-08-17 16:59:53 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-17 16:59:53 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-17 16:59:53 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
+2026-08-17 16:59:53 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
+2026-08-17 16:59:53 [INFO    ] driver_factory.py:151 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-17 16:59:58 [INFO    ] driver_factory.py:112 — App launched by driver. Waiting for stabilization...
+2026-08-17 17:00:00 [INFO    ] driver_factory.py:115 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-17 17:00:00 [INFO    ] conftest.py:351 — Driver created successfully.
+2026-08-17 17:00:03 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-17 17:00:07 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-17 17:00:07 [INFO    ] conftest.py:252 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-17 17:00:07 [INFO    ] conftest.py:364 — DRIVER SETUP COMPLETE
+2026-08-17 17:00:07 [INFO    ] base_test.py:29 — BaseTest setup completed.
+2026-08-17 17:00:07 [INFO    ] test_login.py:149 — ========== SMOKE LOGIN START ==========
+2026-08-17 17:00:07 [INFO    ] base_test.py:39 — Logging in as default test user.
+2026-08-17 17:00:07 [INFO    ] login_page.py:599 — ========== LOGIN FLOW START ==========
+2026-08-17 17:00:08 [INFO    ] login_page.py:43 — Opening profile tab
+2026-08-17 17:00:09 [INFO    ] login_page.py:53 — Profile tab open attempt 1/2
+2026-08-17 17:00:17 [ERROR   ] base_page.py:115 — Element not clickable after 8s: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-17 17:00:18 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_clickable___android.view.View__clickable=_true___.__android.widget.TextView__text=_Profile____20260817_170017.png
+2026-08-17 17:00:18 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_clickable___android.view.View__clickable=_true___.__android.widget.TextView__text=_Profile____20260817_170018.xml
+2026-08-17 17:00:18 [ERROR   ] base_page.py:189 — Click failed on attempt 1 for ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]"): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-17 17:00:18 [WARNING ] base_page.py:419 — Attempting to recover application state...
+2026-08-17 17:00:21 [INFO    ] base_page.py:424 — App recovery attempt completed.
+2026-08-17 17:00:23 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/click_failed_20260817_170021.png
+2026-08-17 17:00:23 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/click_failed_20260817_170023.xml
+2026-08-17 17:00:23 [WARNING ] login_page.py:98 — Element-based click failed: Unable to click ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]") after 1 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-17 17:00:31 [ERROR   ] base_page.py:106 — Element not visible after 8s: ('-android uiautomator', 'new UiSelector().text("Edit Profile")')
+2026-08-17 17:00:32 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible_new UiSelector().text(_Edit Profile_)_20260817_170031.png
+2026-08-17 17:00:32 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_visible_new UiSelector().text(_Edit Profile_)_20260817_170032.xml
+2026-08-17 17:00:35 [ERROR   ] base_page.py:106 — Element not visible after 3s: ('id', 'com.zee5.hipi:id/exo_content_frame')
+2026-08-17 17:00:37 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible_com.zee5.hipi_id_exo_content_frame_20260817_170035.png
+2026-08-17 17:00:37 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_visible_com.zee5.hipi_id_exo_content_frame_20260817_170037.xml
+2026-08-17 17:00:37 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-17 17:00:37 [INFO    ] base_page.py:140 — wait_for_any_visible matched: ('-android uiautomator', 'new UiSelector().textContains("Continue")')
+2026-08-17 17:00:37 [INFO    ] login_page.py:147 — Profile tab opened (coordinate tap, verified)
+2026-08-17 17:00:37 [INFO    ] login_page.py:238 — Clicking continue button
+2026-08-17 17:00:38 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().textContains("Continue")')
+2026-08-17 17:00:38 [INFO    ] login_page.py:248 — Continue button clicked
+2026-08-17 17:00:38 [INFO    ] login_page.py:276 — Entering mobile number: 9876543210
+2026-08-17 17:00:39 [INFO    ] base_page.py:209 — Entered text '9876543210' into ('class name', 'android.widget.EditText')
+2026-08-17 17:00:39 [INFO    ] base_page.py:287 — Keyboard hidden.
+2026-08-17 17:00:39 [INFO    ] login_page.py:298 — Mobile number entered
+2026-08-17 17:00:39 [INFO    ] login_page.py:323 — Clicking proceed button
+2026-08-17 17:00:40 [INFO    ] base_page.py:173 — Clicked: ('accessibility id', 'Proceed')
+2026-08-17 17:00:40 [INFO    ] login_page.py:333 — Proceed button clicked
+2026-08-17 17:00:40 [INFO    ] login_page.py:361 — Entering OTP: 5186
+2026-08-17 17:00:41 [INFO    ] base_page.py:209 — Entered text '5186' into ('class name', 'android.widget.EditText')
+2026-08-17 17:00:41 [INFO    ] base_page.py:287 — Keyboard hidden.
+2026-08-17 17:00:41 [INFO    ] login_page.py:380 — OTP entered successfully
+2026-08-17 17:00:41 [INFO    ] login_page.py:466 — Waiting for OTP verification outcome (sheet closes = success, sheet stays open = invalid)...
+2026-08-17 17:00:41 [INFO    ] login_page.py:480 — Login sheet indicator present at start: True
+2026-08-17 17:01:11 [WARNING ] login_page.py:517 — Timeout with OTP sheet still open -> treating as INVALID OTP (toast text: 'None')
+2026-08-17 17:01:13 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/invalid_otp_toast_20260817_170111.png
+2026-08-17 17:01:13 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/invalid_otp_toast_20260817_170113.xml
+2026-08-17 17:01:13 [ERROR   ] login_page.py:733 — Login flow failed: Login failed - invalid OTP (toast shown: '(sheet remained open, no toast text captured)')
+2026-08-17 17:01:15 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/login_failed_20260817_170113.png
+2026-08-17 17:01:15 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/login_failed_20260817_170115.xml
+2026-08-17 17:01:16 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/test_valid_login_smoke_20260817_170115.png
+2026-08-17 17:01:16 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/test_valid_login_smoke_20260817_170116.xml
+2026-08-17 17:01:16 [ERROR   ] conftest.py:468 — Test FAILED: test_valid_login_smoke
+2026-08-17 17:01:16 [INFO    ] conftest.py:375 — Closing driver session.

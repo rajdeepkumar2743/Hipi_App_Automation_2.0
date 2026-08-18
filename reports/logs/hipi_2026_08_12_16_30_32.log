@@ -1,0 +1,1381 @@
+2026-08-12 16:30:32 [INFO    ] conftest.py:363 — ==================================================
+2026-08-12 16:30:32 [INFO    ] conftest.py:364 — PYTEST SESSION START
+2026-08-12 16:30:32 [INFO    ] conftest.py:365 — ==================================================
+2026-08-12 16:30:32 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 16:30:32 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 16:30:32 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 16:30:32 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 16:30:32 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 16:30:32 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 16:30:32 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 16:30:32 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 16:30:32 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 16:30:36 [INFO    ] driver_factory.py:108 — App launched by driver. Waiting for stabilization...
+2026-08-12 16:30:38 [INFO    ] driver_factory.py:111 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-12 16:30:38 [INFO    ] conftest.py:238 — Driver created successfully.
+2026-08-12 16:30:43 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-12 16:30:55 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-12 16:30:55 [INFO    ] conftest.py:153 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-12 16:30:55 [INFO    ] conftest.py:251 — DRIVER SETUP COMPLETE
+2026-08-12 16:30:55 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-12 16:30:55 [INFO    ] base_test.py:58 — login_and_reach_feed: START
+2026-08-12 16:30:55 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-12 16:30:55 [INFO    ] login_page.py:635 — ========== LOGIN FLOW START ==========
+2026-08-12 16:30:56 [INFO    ] login_page.py:34 — Opening profile tab
+2026-08-12 16:30:57 [INFO    ] login_page.py:44 — Profile tab open attempt 1/2
+2026-08-12 16:31:09 [ERROR   ] base_page.py:59 — Element not clickable after 8s: ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')
+2026-08-12 16:31:11 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163109.png
+2026-08-12 16:31:11 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163111.xml
+2026-08-12 16:31:11 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:31:11 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:31:14 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:31:16 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/click_failed_20260812_163114.png
+2026-08-12 16:31:16 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/click_failed_20260812_163116.xml
+2026-08-12 16:31:16 [WARNING ] login_page.py:88 — Element-based click failed: Unable to click ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")') after 1 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:31:17 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 16:31:29 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 16:31:29 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_163129.png
+2026-08-12 16:31:29 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_163129.xml
+2026-08-12 16:31:29 [WARNING ] login_page.py:139 — Attempt 1 did not reach the login sheet, recovering and retrying...
+2026-08-12 16:31:29 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:31:32 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:31:34 [INFO    ] login_page.py:44 — Profile tab open attempt 2/2
+2026-08-12 16:31:46 [ERROR   ] base_page.py:59 — Element not clickable after 8s: ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')
+2026-08-12 16:31:48 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163146.png
+2026-08-12 16:31:48 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163148.xml
+2026-08-12 16:31:48 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:31:48 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:31:51 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:31:52 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/click_failed_20260812_163151.png
+2026-08-12 16:31:52 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/click_failed_20260812_163152.xml
+2026-08-12 16:31:52 [WARNING ] login_page.py:88 — Element-based click failed: Unable to click ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")') after 1 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:31:52 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 16:32:04 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 16:32:05 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_163204.png
+2026-08-12 16:32:05 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_163205.xml
+2026-08-12 16:32:05 [WARNING ] login_page.py:139 — Attempt 2 did not reach the login sheet, recovering and retrying...
+2026-08-12 16:32:05 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:32:08 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:32:10 [ERROR   ] login_page.py:152 — Unable to open profile tab / reach login sheet after 2 attempts
+2026-08-12 16:32:11 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/profile_tab_failed_20260812_163210.png
+2026-08-12 16:32:11 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/profile_tab_failed_20260812_163211.xml
+2026-08-12 16:32:11 [INFO    ] login_page.py:191 — Already logged in — 'Edit Profile' visible. noReset=true preserved a previous session. Navigating to home feed.
+2026-08-12 16:32:12 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Home']]")
+2026-08-12 16:32:12 [INFO    ] login_page.py:203 — Navigated to home tab.
+2026-08-12 16:32:12 [INFO    ] login_page.py:660 — ========== LOGIN SKIPPED (ALREADY LOGGED IN) ==========
+2026-08-12 16:32:12 [INFO    ] login_page.py:575 — Validating home page
+2026-08-12 16:32:35 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 20s. Candidates: [('-android uiautomator', 'new UiSelector().descriptionContains("Home")'), ('id', 'com.zee5.hipi:id/clFeedContainer'), ('id', 'com.zee5.hipi:id/playerView'), ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')]. Last error: None
+2026-08-12 16:32:36 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_163235.png
+2026-08-12 16:32:36 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_163236.xml
+2026-08-12 16:32:36 [WARNING ] login_page.py:594 — Home page not displayed
+2026-08-12 16:32:37 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/test_like_video_20260812_163236.png
+2026-08-12 16:32:37 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/test_like_video_20260812_163237.xml
+2026-08-12 16:32:37 [ERROR   ] conftest.py:355 — Test FAILED: test_like_video
+2026-08-12 16:32:37 [INFO    ] conftest.py:262 — Closing driver session.
+2026-08-12 16:32:37 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 16:32:37 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 16:32:37 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 16:32:37 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 16:32:37 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 16:32:37 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 16:32:37 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 16:32:37 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 16:32:37 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 16:32:46 [INFO    ] driver_factory.py:108 — App launched by driver. Waiting for stabilization...
+2026-08-12 16:32:48 [INFO    ] driver_factory.py:111 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-12 16:32:48 [INFO    ] conftest.py:238 — Driver created successfully.
+2026-08-12 16:32:54 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-12 16:33:05 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-12 16:33:05 [INFO    ] conftest.py:153 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-12 16:33:05 [INFO    ] conftest.py:251 — DRIVER SETUP COMPLETE
+2026-08-12 16:33:05 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-12 16:33:05 [INFO    ] base_test.py:58 — login_and_reach_feed: START
+2026-08-12 16:33:05 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-12 16:33:05 [INFO    ] login_page.py:635 — ========== LOGIN FLOW START ==========
+2026-08-12 16:33:06 [INFO    ] login_page.py:34 — Opening profile tab
+2026-08-12 16:33:07 [INFO    ] login_page.py:44 — Profile tab open attempt 1/2
+2026-08-12 16:33:19 [ERROR   ] base_page.py:59 — Element not clickable after 8s: ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')
+2026-08-12 16:33:25 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163319.png
+2026-08-12 16:33:25 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163325.xml
+2026-08-12 16:33:25 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:33:25 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:33:28 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:33:30 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/click_failed_20260812_163328.png
+2026-08-12 16:33:30 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/click_failed_20260812_163330.xml
+2026-08-12 16:33:30 [WARNING ] login_page.py:88 — Element-based click failed: Unable to click ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")') after 1 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:33:31 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 16:33:43 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 16:33:45 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_163343.png
+2026-08-12 16:33:45 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_163345.xml
+2026-08-12 16:33:45 [WARNING ] login_page.py:139 — Attempt 1 did not reach the login sheet, recovering and retrying...
+2026-08-12 16:33:45 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:33:48 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:33:50 [INFO    ] login_page.py:44 — Profile tab open attempt 2/2
+2026-08-12 16:34:01 [ERROR   ] base_page.py:59 — Element not clickable after 8s: ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')
+2026-08-12 16:34:02 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163401.png
+2026-08-12 16:34:02 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163402.xml
+2026-08-12 16:34:02 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:34:02 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:34:05 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:34:06 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/click_failed_20260812_163405.png
+2026-08-12 16:34:06 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/click_failed_20260812_163406.xml
+2026-08-12 16:34:06 [WARNING ] login_page.py:88 — Element-based click failed: Unable to click ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")') after 1 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:34:07 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 16:34:19 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 16:34:20 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_163419.png
+2026-08-12 16:34:20 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_163420.xml
+2026-08-12 16:34:20 [WARNING ] login_page.py:139 — Attempt 2 did not reach the login sheet, recovering and retrying...
+2026-08-12 16:34:20 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:34:23 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:34:25 [ERROR   ] login_page.py:152 — Unable to open profile tab / reach login sheet after 2 attempts
+2026-08-12 16:34:26 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/profile_tab_failed_20260812_163425.png
+2026-08-12 16:34:26 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/profile_tab_failed_20260812_163426.xml
+2026-08-12 16:34:26 [INFO    ] login_page.py:191 — Already logged in — 'Edit Profile' visible. noReset=true preserved a previous session. Navigating to home feed.
+2026-08-12 16:34:27 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Home']]")
+2026-08-12 16:34:27 [INFO    ] login_page.py:203 — Navigated to home tab.
+2026-08-12 16:34:27 [INFO    ] login_page.py:660 — ========== LOGIN SKIPPED (ALREADY LOGGED IN) ==========
+2026-08-12 16:34:27 [INFO    ] login_page.py:575 — Validating home page
+2026-08-12 16:34:52 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 20s. Candidates: [('-android uiautomator', 'new UiSelector().descriptionContains("Home")'), ('id', 'com.zee5.hipi:id/clFeedContainer'), ('id', 'com.zee5.hipi:id/playerView'), ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')]. Last error: None
+2026-08-12 16:34:57 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_163452.png
+2026-08-12 16:34:58 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_163457.xml
+2026-08-12 16:34:58 [WARNING ] login_page.py:594 — Home page not displayed
+2026-08-12 16:35:03 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/test_like_then_unlike_video_20260812_163458.png
+2026-08-12 16:35:04 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/test_like_then_unlike_video_20260812_163503.xml
+2026-08-12 16:35:04 [ERROR   ] conftest.py:355 — Test FAILED: test_like_then_unlike_video
+2026-08-12 16:35:04 [INFO    ] conftest.py:262 — Closing driver session.
+2026-08-12 16:35:08 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 16:35:08 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 16:35:08 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 16:35:08 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 16:35:08 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 16:35:08 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 16:35:08 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 16:35:08 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 16:35:08 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 16:35:16 [INFO    ] driver_factory.py:108 — App launched by driver. Waiting for stabilization...
+2026-08-12 16:35:18 [INFO    ] driver_factory.py:111 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-12 16:35:18 [INFO    ] conftest.py:238 — Driver created successfully.
+2026-08-12 16:35:24 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-12 16:35:36 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-12 16:35:36 [INFO    ] conftest.py:153 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-12 16:35:36 [INFO    ] conftest.py:251 — DRIVER SETUP COMPLETE
+2026-08-12 16:35:36 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-12 16:35:36 [INFO    ] base_test.py:58 — login_and_reach_feed: START
+2026-08-12 16:35:36 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-12 16:35:36 [INFO    ] login_page.py:635 — ========== LOGIN FLOW START ==========
+2026-08-12 16:35:37 [INFO    ] login_page.py:34 — Opening profile tab
+2026-08-12 16:35:38 [INFO    ] login_page.py:44 — Profile tab open attempt 1/2
+2026-08-12 16:35:50 [ERROR   ] base_page.py:59 — Element not clickable after 8s: ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')
+2026-08-12 16:35:56 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163550.png
+2026-08-12 16:35:56 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163556.xml
+2026-08-12 16:35:56 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:35:56 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:35:59 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:36:05 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/click_failed_20260812_163559.png
+2026-08-12 16:36:05 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/click_failed_20260812_163605.xml
+2026-08-12 16:36:05 [WARNING ] login_page.py:88 — Element-based click failed: Unable to click ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")') after 1 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:36:05 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 16:36:17 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 16:36:19 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_163617.png
+2026-08-12 16:36:20 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_163619.xml
+2026-08-12 16:36:20 [WARNING ] login_page.py:139 — Attempt 1 did not reach the login sheet, recovering and retrying...
+2026-08-12 16:36:20 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:36:23 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:36:25 [INFO    ] login_page.py:44 — Profile tab open attempt 2/2
+2026-08-12 16:36:36 [ERROR   ] base_page.py:59 — Element not clickable after 8s: ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')
+2026-08-12 16:36:38 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163636.png
+2026-08-12 16:36:38 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163638.xml
+2026-08-12 16:36:38 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:36:38 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:36:41 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:36:42 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/click_failed_20260812_163641.png
+2026-08-12 16:36:42 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/click_failed_20260812_163642.xml
+2026-08-12 16:36:42 [WARNING ] login_page.py:88 — Element-based click failed: Unable to click ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")') after 1 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:36:43 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 16:36:55 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 16:36:56 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_163655.png
+2026-08-12 16:36:57 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_163656.xml
+2026-08-12 16:36:57 [WARNING ] login_page.py:139 — Attempt 2 did not reach the login sheet, recovering and retrying...
+2026-08-12 16:36:57 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:37:00 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:37:02 [ERROR   ] login_page.py:152 — Unable to open profile tab / reach login sheet after 2 attempts
+2026-08-12 16:37:03 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/profile_tab_failed_20260812_163702.png
+2026-08-12 16:37:03 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/profile_tab_failed_20260812_163703.xml
+2026-08-12 16:37:03 [INFO    ] login_page.py:191 — Already logged in — 'Edit Profile' visible. noReset=true preserved a previous session. Navigating to home feed.
+2026-08-12 16:37:04 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Home']]")
+2026-08-12 16:37:04 [INFO    ] login_page.py:203 — Navigated to home tab.
+2026-08-12 16:37:04 [INFO    ] login_page.py:660 — ========== LOGIN SKIPPED (ALREADY LOGGED IN) ==========
+2026-08-12 16:37:04 [INFO    ] login_page.py:575 — Validating home page
+2026-08-12 16:37:28 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 20s. Candidates: [('-android uiautomator', 'new UiSelector().descriptionContains("Home")'), ('id', 'com.zee5.hipi:id/clFeedContainer'), ('id', 'com.zee5.hipi:id/playerView'), ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')]. Last error: None
+2026-08-12 16:37:30 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_163728.png
+2026-08-12 16:37:30 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_163730.xml
+2026-08-12 16:37:30 [WARNING ] login_page.py:594 — Home page not displayed
+2026-08-12 16:37:31 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/test_add_comment_20260812_163730.png
+2026-08-12 16:37:31 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/test_add_comment_20260812_163731.xml
+2026-08-12 16:37:31 [ERROR   ] conftest.py:355 — Test FAILED: test_add_comment
+2026-08-12 16:37:31 [INFO    ] conftest.py:262 — Closing driver session.
+2026-08-12 16:37:32 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 16:37:32 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 16:37:32 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 16:37:32 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 16:37:32 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 16:37:32 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 16:37:32 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 16:37:32 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 16:37:32 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 16:37:44 [INFO    ] driver_factory.py:108 — App launched by driver. Waiting for stabilization...
+2026-08-12 16:37:46 [INFO    ] driver_factory.py:111 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-12 16:37:46 [INFO    ] conftest.py:238 — Driver created successfully.
+2026-08-12 16:37:51 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-12 16:38:03 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-12 16:38:03 [INFO    ] conftest.py:153 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-12 16:38:03 [INFO    ] conftest.py:251 — DRIVER SETUP COMPLETE
+2026-08-12 16:38:03 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-12 16:38:03 [INFO    ] base_test.py:58 — login_and_reach_feed: START
+2026-08-12 16:38:03 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-12 16:38:03 [INFO    ] login_page.py:635 — ========== LOGIN FLOW START ==========
+2026-08-12 16:38:04 [INFO    ] login_page.py:34 — Opening profile tab
+2026-08-12 16:38:05 [INFO    ] login_page.py:44 — Profile tab open attempt 1/2
+2026-08-12 16:38:17 [ERROR   ] base_page.py:59 — Element not clickable after 8s: ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')
+2026-08-12 16:38:20 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163817.png
+2026-08-12 16:38:20 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163820.xml
+2026-08-12 16:38:20 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:38:20 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:38:23 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:38:26 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/click_failed_20260812_163823.png
+2026-08-12 16:38:27 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/click_failed_20260812_163826.xml
+2026-08-12 16:38:27 [WARNING ] login_page.py:88 — Element-based click failed: Unable to click ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")') after 1 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:38:29 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 16:38:41 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 16:38:43 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_163841.png
+2026-08-12 16:38:43 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_163843.xml
+2026-08-12 16:38:43 [WARNING ] login_page.py:139 — Attempt 1 did not reach the login sheet, recovering and retrying...
+2026-08-12 16:38:43 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:38:46 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:38:48 [INFO    ] login_page.py:44 — Profile tab open attempt 2/2
+2026-08-12 16:39:00 [ERROR   ] base_page.py:59 — Element not clickable after 8s: ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')
+2026-08-12 16:39:02 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163900.png
+2026-08-12 16:39:02 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163902.xml
+2026-08-12 16:39:02 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:39:02 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:39:05 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:39:10 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/click_failed_20260812_163905.png
+2026-08-12 16:39:11 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/click_failed_20260812_163910.xml
+2026-08-12 16:39:11 [WARNING ] login_page.py:88 — Element-based click failed: Unable to click ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")') after 1 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:39:12 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 16:39:25 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 16:39:26 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_163925.png
+2026-08-12 16:39:27 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_163926.xml
+2026-08-12 16:39:27 [WARNING ] login_page.py:139 — Attempt 2 did not reach the login sheet, recovering and retrying...
+2026-08-12 16:39:27 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:39:30 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:39:32 [ERROR   ] login_page.py:152 — Unable to open profile tab / reach login sheet after 2 attempts
+2026-08-12 16:39:33 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/profile_tab_failed_20260812_163932.png
+2026-08-12 16:39:34 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/profile_tab_failed_20260812_163933.xml
+2026-08-12 16:39:34 [INFO    ] login_page.py:191 — Already logged in — 'Edit Profile' visible. noReset=true preserved a previous session. Navigating to home feed.
+2026-08-12 16:39:36 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Home']]")
+2026-08-12 16:39:36 [INFO    ] login_page.py:203 — Navigated to home tab.
+2026-08-12 16:39:36 [INFO    ] login_page.py:660 — ========== LOGIN SKIPPED (ALREADY LOGGED IN) ==========
+2026-08-12 16:39:36 [INFO    ] login_page.py:575 — Validating home page
+2026-08-12 16:40:04 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 20s. Candidates: [('-android uiautomator', 'new UiSelector().descriptionContains("Home")'), ('id', 'com.zee5.hipi:id/clFeedContainer'), ('id', 'com.zee5.hipi:id/playerView'), ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')]. Last error: None
+2026-08-12 16:40:11 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_164004.png
+2026-08-12 16:40:12 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_164011.xml
+2026-08-12 16:40:12 [WARNING ] login_page.py:594 — Home page not displayed
+2026-08-12 16:40:16 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/test_add_comment_variants[comment_0]_20260812_164012.png
+2026-08-12 16:40:16 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/test_add_comment_variants[comment_0]_20260812_164016.xml
+2026-08-12 16:40:16 [ERROR   ] conftest.py:355 — Test FAILED: test_add_comment_variants[comment_0]
+2026-08-12 16:40:16 [INFO    ] conftest.py:262 — Closing driver session.
+2026-08-12 16:40:19 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 16:40:19 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 16:40:19 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 16:40:19 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 16:40:19 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 16:40:19 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 16:40:19 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 16:40:19 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 16:40:19 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 16:40:30 [INFO    ] driver_factory.py:108 — App launched by driver. Waiting for stabilization...
+2026-08-12 16:40:32 [INFO    ] driver_factory.py:111 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-12 16:40:32 [INFO    ] conftest.py:238 — Driver created successfully.
+2026-08-12 16:40:37 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-12 16:40:48 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-12 16:40:49 [INFO    ] conftest.py:153 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-12 16:40:49 [INFO    ] conftest.py:251 — DRIVER SETUP COMPLETE
+2026-08-12 16:40:49 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-12 16:40:49 [INFO    ] base_test.py:58 — login_and_reach_feed: START
+2026-08-12 16:40:49 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-12 16:40:49 [INFO    ] login_page.py:635 — ========== LOGIN FLOW START ==========
+2026-08-12 16:40:50 [INFO    ] login_page.py:34 — Opening profile tab
+2026-08-12 16:40:51 [INFO    ] login_page.py:44 — Profile tab open attempt 1/2
+2026-08-12 16:41:03 [ERROR   ] base_page.py:59 — Element not clickable after 8s: ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')
+2026-08-12 16:41:07 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_164103.png
+2026-08-12 16:41:07 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_164107.xml
+2026-08-12 16:41:07 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:41:07 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:41:10 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:41:15 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/click_failed_20260812_164110.png
+2026-08-12 16:41:15 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/click_failed_20260812_164115.xml
+2026-08-12 16:41:15 [WARNING ] login_page.py:88 — Element-based click failed: Unable to click ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")') after 1 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:41:15 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 16:41:28 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 16:41:30 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_164128.png
+2026-08-12 16:41:30 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_164130.xml
+2026-08-12 16:41:30 [WARNING ] login_page.py:139 — Attempt 1 did not reach the login sheet, recovering and retrying...
+2026-08-12 16:41:30 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:41:33 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:41:35 [INFO    ] login_page.py:44 — Profile tab open attempt 2/2
+2026-08-12 16:41:47 [ERROR   ] base_page.py:59 — Element not clickable after 8s: ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')
+2026-08-12 16:41:49 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_164147.png
+2026-08-12 16:41:50 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_164149.xml
+2026-08-12 16:41:50 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:41:50 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:41:53 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:41:54 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/click_failed_20260812_164153.png
+2026-08-12 16:41:54 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/click_failed_20260812_164154.xml
+2026-08-12 16:41:54 [WARNING ] login_page.py:88 — Element-based click failed: Unable to click ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")') after 1 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:41:55 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 16:42:06 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 16:42:07 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_164206.png
+2026-08-12 16:42:08 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_164207.xml
+2026-08-12 16:42:08 [WARNING ] login_page.py:139 — Attempt 2 did not reach the login sheet, recovering and retrying...
+2026-08-12 16:42:08 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:42:11 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:42:13 [ERROR   ] login_page.py:152 — Unable to open profile tab / reach login sheet after 2 attempts
+2026-08-12 16:42:14 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/profile_tab_failed_20260812_164213.png
+2026-08-12 16:42:14 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/profile_tab_failed_20260812_164214.xml
+2026-08-12 16:42:14 [INFO    ] login_page.py:191 — Already logged in — 'Edit Profile' visible. noReset=true preserved a previous session. Navigating to home feed.
+2026-08-12 16:42:16 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Home']]")
+2026-08-12 16:42:16 [INFO    ] login_page.py:203 — Navigated to home tab.
+2026-08-12 16:42:16 [INFO    ] login_page.py:660 — ========== LOGIN SKIPPED (ALREADY LOGGED IN) ==========
+2026-08-12 16:42:16 [INFO    ] login_page.py:575 — Validating home page
+2026-08-12 16:42:53 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 20s. Candidates: [('-android uiautomator', 'new UiSelector().descriptionContains("Home")'), ('id', 'com.zee5.hipi:id/clFeedContainer'), ('id', 'com.zee5.hipi:id/playerView'), ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')]. Last error: None
+2026-08-12 16:43:02 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_164253.png
+2026-08-12 16:43:02 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_164302.xml
+2026-08-12 16:43:02 [WARNING ] login_page.py:594 — Home page not displayed
+2026-08-12 16:46:28 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/test_add_comment_variants[comment_1]_20260812_164302.png
+2026-08-12 16:52:07 [ERROR   ] screenshot_utils.py:81 — Page source save failed: Message: Could not proxy command to the remote server. Original error: timeout of 240000ms exceeded
+Stacktrace:
+UnknownError: Could not proxy command to the remote server. Original error: timeout of 240000ms exceeded
+    at ProxyRequestError.getActualError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:692:16)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:330:149)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at process.processTimers (node:internal/timers:538:9)
+2026-08-12 16:52:07 [ERROR   ] conftest.py:355 — Test FAILED: test_add_comment_variants[comment_1]
+2026-08-12 16:52:07 [INFO    ] conftest.py:262 — Closing driver session.
+2026-08-12 17:14:34 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 17:14:34 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 17:14:34 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 17:14:34 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 17:14:34 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:14:34 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:14:34 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:14:34 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:14:34 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:15:34 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:15:34 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 17:15:37 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 17:15:37 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:15:37 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:15:37 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:15:37 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:15:37 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:19:42 [ERROR   ] conftest.py:123 — Attempt 2 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:19:42 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:19:42 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 17:19:42 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 17:19:42 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 17:19:42 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 17:19:42 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:19:42 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:19:42 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:19:42 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:19:42 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:20:42 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:20:42 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 17:20:45 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 17:20:45 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:20:45 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:20:45 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:20:45 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:20:45 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:23:39 [ERROR   ] conftest.py:123 — Attempt 2 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:23:39 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:23:39 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 17:23:39 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 17:23:39 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 17:23:39 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 17:23:39 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:23:39 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:23:39 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:23:39 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:23:39 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:24:40 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:24:40 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 17:24:43 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 17:24:43 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:24:43 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:24:43 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:24:43 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:24:43 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:25:43 [ERROR   ] conftest.py:123 — Attempt 2 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:25:43 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:25:43 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 17:25:43 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 17:25:43 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 17:25:43 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 17:25:43 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:25:43 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:25:43 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:25:43 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:25:43 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:33:33 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:33:33 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 17:33:36 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 17:33:36 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:33:36 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:33:36 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:33:36 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:33:36 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:34:36 [ERROR   ] conftest.py:123 — Attempt 2 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:34:36 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:34:36 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 17:34:36 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 17:34:36 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 17:34:36 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 17:34:36 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:34:36 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:34:36 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:34:36 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:34:36 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:35:36 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:35:36 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 17:35:39 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 17:35:39 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:35:39 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:35:39 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:35:39 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:35:39 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:36:39 [ERROR   ] conftest.py:123 — Attempt 2 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:36:39 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:36:39 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 17:36:39 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 17:36:39 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 17:36:39 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 17:36:39 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:36:39 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:36:39 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:36:39 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:36:39 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:37:39 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:37:39 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 17:37:42 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 17:37:42 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:37:42 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:37:42 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:37:42 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:37:42 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:38:43 [ERROR   ] conftest.py:123 — Attempt 2 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:38:43 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:38:43 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 17:38:43 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 17:38:43 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 17:38:43 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 17:38:43 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:38:43 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:38:43 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:38:43 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:38:43 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:39:43 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:39:43 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 17:39:46 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 17:39:46 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:39:46 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:39:46 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:39:46 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:39:46 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:56:05 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 17:56:05 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 17:56:05 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 17:56:05 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 17:56:05 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 17:56:05 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 17:56:05 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:56:05 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:56:05 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:56:05 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:56:05 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:57:06 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:57:06 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 17:57:09 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 17:57:09 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:57:09 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:57:09 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:57:09 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:57:09 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:58:09 [ERROR   ] conftest.py:123 — Attempt 2 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:58:09 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:58:09 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 17:58:09 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 17:58:09 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 17:58:09 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 17:58:09 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:58:09 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:58:09 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:58:09 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:58:09 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 17:59:09 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 17:59:09 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 17:59:12 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 17:59:12 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 17:59:12 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 17:59:12 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 17:59:12 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 17:59:12 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 18:00:12 [ERROR   ] conftest.py:123 — Attempt 2 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 18:00:12 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 18:00:12 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 18:00:12 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 18:00:12 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 18:00:12 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 18:00:12 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 18:00:12 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 18:00:12 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 18:00:12 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 18:00:12 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 18:01:31 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 18:01:31 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 18:19:24 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 18:19:24 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 18:19:24 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 18:19:24 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 18:19:24 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 18:19:24 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 18:51:57 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 18:51:57 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 18:51:57 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 18:51:57 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 18:51:57 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 18:51:57 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 18:51:57 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 18:51:57 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 18:51:57 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 18:51:57 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 18:51:57 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 19:07:46 [ERROR   ] conftest.py:123 — Attempt 1 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 19:07:46 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 19:07:49 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 19:07:49 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 19:07:49 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 19:07:49 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 19:07:49 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 19:07:49 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 20:01:06 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 20:01:06 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 20:01:06 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 20:01:06 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 20:01:06 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 20:01:06 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 20:01:06 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 20:01:06 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 20:01:06 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 20:01:06 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 20:01:06 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 20:10:04 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 20:10:04 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 20:10:07 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 20:10:07 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 20:10:07 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 20:10:07 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 20:10:07 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 20:10:07 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 20:50:00 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 20:50:00 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 20:50:00 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 20:50:00 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 20:50:00 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 20:50:00 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 20:50:00 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 20:50:00 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 20:50:00 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 20:50:00 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 20:50:00 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 21:02:20 [ERROR   ] conftest.py:123 — Attempt 1 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 21:02:20 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 21:02:23 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 21:02:23 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 21:02:23 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 21:02:23 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 21:02:23 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 21:02:23 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 21:33:51 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 21:33:51 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 21:33:51 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 21:33:51 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 21:33:51 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 21:33:51 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 21:33:51 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 21:33:51 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 21:33:51 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 21:33:51 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 21:33:51 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 22:03:17 [ERROR   ] conftest.py:123 — Attempt 1 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 22:03:17 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 22:03:20 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 22:03:20 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 22:03:20 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 22:03:20 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 22:03:20 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 22:03:20 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 22:36:05 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 22:36:05 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 22:36:05 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 22:36:05 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 22:36:05 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 22:36:05 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 22:36:05 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 22:36:05 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 22:36:05 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 22:36:05 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 22:36:05 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 23:04:18 [ERROR   ] conftest.py:123 — Attempt 1 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-12 23:04:18 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-12 23:04:21 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 23:04:21 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 23:04:21 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 23:04:21 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 23:04:21 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 23:04:21 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 00:05:04 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 00:05:04 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 00:05:04 [INFO    ] conftest.py:227 — ==================================================
+2026-08-13 00:05:04 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-13 00:05:04 [INFO    ] conftest.py:229 — ==================================================
+2026-08-13 00:05:04 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-13 00:05:04 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 00:05:04 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 00:05:04 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 00:05:04 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 00:05:04 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 01:06:10 [ERROR   ] conftest.py:123 — Attempt 1 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 01:06:10 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-13 01:06:13 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-13 01:06:13 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 01:06:13 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 01:06:13 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 01:06:13 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 01:06:13 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 02:09:15 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 02:09:15 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 02:09:15 [INFO    ] conftest.py:227 — ==================================================
+2026-08-13 02:09:15 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-13 02:09:15 [INFO    ] conftest.py:229 — ==================================================
+2026-08-13 02:09:15 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-13 02:09:15 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 02:09:15 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 02:09:15 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 02:09:15 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 02:09:15 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 02:44:10 [ERROR   ] conftest.py:123 — Attempt 1 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 02:44:10 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-13 02:44:13 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-13 02:44:13 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 02:44:13 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 02:44:13 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 02:44:13 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 02:44:13 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 03:00:43 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 03:00:43 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 03:00:43 [INFO    ] conftest.py:227 — ==================================================
+2026-08-13 03:00:43 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-13 03:00:43 [INFO    ] conftest.py:229 — ==================================================
+2026-08-13 03:00:43 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-13 03:00:43 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 03:00:43 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 03:00:43 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 03:00:43 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 03:00:43 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 04:22:23 [ERROR   ] conftest.py:123 — Attempt 1 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 04:22:23 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-13 04:38:13 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-13 04:38:13 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 04:38:13 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 04:38:13 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 04:38:13 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 04:38:13 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 04:58:29 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 04:58:29 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 05:16:24 [INFO    ] conftest.py:227 — ==================================================
+2026-08-13 05:16:24 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-13 05:16:24 [INFO    ] conftest.py:229 — ==================================================
+2026-08-13 05:16:24 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-13 05:16:24 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 05:16:24 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 05:16:24 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 05:16:24 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 05:16:24 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 06:08:47 [ERROR   ] conftest.py:123 — Attempt 1 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 06:08:47 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-13 06:26:34 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-13 06:26:34 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 06:26:34 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 06:26:34 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 06:26:34 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 06:26:34 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 07:59:56 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 07:59:56 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 07:59:56 [INFO    ] conftest.py:227 — ==================================================
+2026-08-13 07:59:56 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-13 07:59:56 [INFO    ] conftest.py:229 — ==================================================
+2026-08-13 07:59:56 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-13 07:59:56 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 07:59:56 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 07:59:56 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 07:59:56 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 07:59:56 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 08:52:08 [ERROR   ] conftest.py:123 — Attempt 1 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 08:52:08 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-13 09:00:57 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-13 09:00:57 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 09:00:57 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 09:00:57 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 09:00:57 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 09:00:57 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 09:51:00 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 09:51:00 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 09:51:00 [INFO    ] conftest.py:227 — ==================================================
+2026-08-13 09:51:00 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-13 09:51:00 [INFO    ] conftest.py:229 — ==================================================
+2026-08-13 09:51:00 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-13 09:51:00 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 09:51:00 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 09:51:00 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 09:51:00 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 09:51:00 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 10:02:25 [ERROR   ] conftest.py:123 — Attempt 1 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 10:02:25 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-13 10:02:28 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-13 10:02:28 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 10:02:28 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 10:02:28 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 10:02:28 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 10:02:28 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 10:22:12 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 10:22:12 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 10:22:12 [INFO    ] conftest.py:227 — ==================================================
+2026-08-13 10:22:12 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-13 10:22:12 [INFO    ] conftest.py:229 — ==================================================
+2026-08-13 10:22:12 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-13 10:22:12 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 10:22:12 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 10:22:12 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 10:22:12 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 10:22:12 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 10:40:28 [ERROR   ] conftest.py:123 — Attempt 1 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 10:40:28 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-13 10:40:31 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-13 10:40:31 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 10:40:31 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 10:40:31 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 10:40:31 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 10:40:31 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 11:03:19 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 11:03:19 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 11:03:19 [INFO    ] conftest.py:227 — ==================================================
+2026-08-13 11:03:19 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-13 11:03:19 [INFO    ] conftest.py:229 — ==================================================
+2026-08-13 11:03:19 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-13 11:03:19 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 11:03:19 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 11:03:19 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 11:03:19 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 11:03:19 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 11:21:35 [ERROR   ] conftest.py:123 — Attempt 1 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 11:21:35 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-13 11:37:26 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-13 11:37:26 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 11:37:26 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 11:37:26 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 11:37:26 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 11:37:26 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 12:04:19 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 12:04:19 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 12:04:19 [INFO    ] conftest.py:227 — ==================================================
+2026-08-13 12:04:19 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-13 12:04:19 [INFO    ] conftest.py:229 — ==================================================
+2026-08-13 12:04:19 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-13 12:04:19 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 12:04:19 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 12:04:19 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 12:04:19 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 12:04:19 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 12:22:39 [ERROR   ] conftest.py:123 — Attempt 1 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 12:22:39 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-13 12:28:30 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-13 12:28:30 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 12:28:30 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 12:28:30 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 12:28:30 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 12:28:30 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 12:29:32 [ERROR   ] conftest.py:123 — Attempt 2 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-13 12:29:32 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-13 12:29:32 [INFO    ] conftest.py:227 — ==================================================
+2026-08-13 12:29:32 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-13 12:29:32 [INFO    ] conftest.py:229 — ==================================================
+2026-08-13 12:29:32 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-13 12:29:32 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 12:29:32 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 12:29:32 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 12:29:32 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 12:29:32 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 12:30:32 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-13 12:30:32 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-13 12:30:35 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-13 12:30:35 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 12:30:35 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 12:30:35 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 12:30:35 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 12:30:35 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 12:31:35 [ERROR   ] conftest.py:123 — Attempt 2 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-13 12:31:35 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-13 12:31:35 [INFO    ] conftest.py:227 — ==================================================
+2026-08-13 12:31:35 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-13 12:31:35 [INFO    ] conftest.py:229 — ==================================================
+2026-08-13 12:31:35 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-13 12:31:35 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 12:31:35 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 12:31:35 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 12:31:35 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 12:31:35 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 12:32:36 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-13 12:32:36 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-13 12:32:39 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-13 12:32:39 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 12:32:39 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 12:32:39 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 12:32:39 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 12:32:39 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 12:33:39 [ERROR   ] conftest.py:123 — Attempt 2 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-13 12:33:39 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-13 12:33:39 [INFO    ] conftest.py:227 — ==================================================
+2026-08-13 12:33:39 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-13 12:33:39 [INFO    ] conftest.py:229 — ==================================================
+2026-08-13 12:33:39 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-13 12:33:39 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 12:33:39 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 12:33:39 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 12:33:39 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 12:33:39 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 12:34:39 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-13 12:34:39 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-13 12:34:42 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-13 12:34:42 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 12:34:42 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 12:34:42 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 12:34:42 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 12:34:42 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 12:35:42 [ERROR   ] conftest.py:123 — Attempt 2 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-13 12:35:42 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-13 12:35:42 [INFO    ] conftest.py:369 — ==================================================
+2026-08-13 12:35:42 [INFO    ] conftest.py:370 — PYTEST SESSION END | Exit status: 1
+2026-08-13 12:35:42 [INFO    ] conftest.py:371 — ==================================================

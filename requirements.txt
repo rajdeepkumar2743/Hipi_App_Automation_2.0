@@ -1,0 +1,30 @@
+# =========================================================
+# HiPi Automation Framework — Dependencies
+#
+# FIXES FROM LOGS:
+#   ISSUE 9 — NotOpenSSLWarning from urllib3
+#     macOS ships LibreSSL 2.8.3 but urllib3 v2 requires
+#     OpenSSL 1.1.1+. Pinned urllib3<2 to suppress the
+#     warning. urllib3 1.x is fully compatible with all
+#     Selenium/Appium versions here.
+# =========================================================
+
+# ─── Core ─────────────────────────────────────────────────
+Appium-Python-Client==4.0.0
+selenium==4.21.0
+
+# ─── urllib3 — pin below v2 to avoid LibreSSL warning on macOS
+urllib3<2.0.0
+
+# ─── Test runner ──────────────────────────────────────────
+pytest==8.2.2
+pytest-xdist==3.6.1
+pytest-rerunfailures==14.0
+pytest-timeout==2.3.1
+pytest-html==4.1.1
+
+# ─── Reporting ────────────────────────────────────────────
+allure-pytest==2.13.5
+
+# ─── Utilities ────────────────────────────────────────────
+python-dotenv==1.0.1

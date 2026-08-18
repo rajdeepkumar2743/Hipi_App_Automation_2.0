@@ -1,0 +1,95 @@
+2026-08-12 16:30:32 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 16:30:32 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 16:30:32 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 16:30:32 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 16:30:32 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 16:30:32 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 16:30:32 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 16:30:32 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 16:30:32 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 16:30:36 [INFO    ] driver_factory.py:108 — App launched by driver. Waiting for stabilization...
+2026-08-12 16:30:38 [INFO    ] driver_factory.py:111 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-12 16:30:38 [INFO    ] conftest.py:238 — Driver created successfully.
+2026-08-12 16:30:43 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-12 16:30:55 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-12 16:30:55 [INFO    ] conftest.py:153 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-12 16:30:55 [INFO    ] conftest.py:251 — DRIVER SETUP COMPLETE
+2026-08-12 16:30:55 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-12 16:30:55 [INFO    ] base_test.py:58 — login_and_reach_feed: START
+2026-08-12 16:30:55 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-12 16:30:55 [INFO    ] login_page.py:635 — ========== LOGIN FLOW START ==========
+2026-08-12 16:30:56 [INFO    ] login_page.py:34 — Opening profile tab
+2026-08-12 16:30:57 [INFO    ] login_page.py:44 — Profile tab open attempt 1/2
+2026-08-12 16:31:09 [ERROR   ] base_page.py:59 — Element not clickable after 8s: ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')
+2026-08-12 16:31:11 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163109.png
+2026-08-12 16:31:11 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163111.xml
+2026-08-12 16:31:11 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:31:11 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:31:14 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:31:16 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/click_failed_20260812_163114.png
+2026-08-12 16:31:16 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/click_failed_20260812_163116.xml
+2026-08-12 16:31:16 [WARNING ] login_page.py:88 — Element-based click failed: Unable to click ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")') after 1 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:31:17 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 16:31:29 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 16:31:29 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_163129.png
+2026-08-12 16:31:29 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_163129.xml
+2026-08-12 16:31:29 [WARNING ] login_page.py:139 — Attempt 1 did not reach the login sheet, recovering and retrying...
+2026-08-12 16:31:29 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:31:32 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:31:34 [INFO    ] login_page.py:44 — Profile tab open attempt 2/2
+2026-08-12 16:31:46 [ERROR   ] base_page.py:59 — Element not clickable after 8s: ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')
+2026-08-12 16:31:48 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163146.png
+2026-08-12 16:31:48 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/element_not_clickable_new UiSelector().clickable(true).text("Profile")_20260812_163148.xml
+2026-08-12 16:31:48 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:31:48 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:31:51 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:31:52 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/click_failed_20260812_163151.png
+2026-08-12 16:31:52 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/click_failed_20260812_163152.xml
+2026-08-12 16:31:52 [WARNING ] login_page.py:88 — Element-based click failed: Unable to click ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")') after 1 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 16:31:52 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 16:32:04 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 16:32:05 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_163204.png
+2026-08-12 16:32:05 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_163205.xml
+2026-08-12 16:32:05 [WARNING ] login_page.py:139 — Attempt 2 did not reach the login sheet, recovering and retrying...
+2026-08-12 16:32:05 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 16:32:08 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 16:32:10 [ERROR   ] login_page.py:152 — Unable to open profile tab / reach login sheet after 2 attempts
+2026-08-12 16:32:11 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/profile_tab_failed_20260812_163210.png
+2026-08-12 16:32:11 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/profile_tab_failed_20260812_163211.xml
+2026-08-12 16:32:11 [INFO    ] login_page.py:191 — Already logged in — 'Edit Profile' visible. noReset=true preserved a previous session. Navigating to home feed.
+2026-08-12 16:32:12 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Home']]")
+2026-08-12 16:32:12 [INFO    ] login_page.py:203 — Navigated to home tab.
+2026-08-12 16:32:12 [INFO    ] login_page.py:660 — ========== LOGIN SKIPPED (ALREADY LOGGED IN) ==========
+2026-08-12 16:32:12 [INFO    ] login_page.py:575 — Validating home page
+2026-08-12 16:32:35 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 20s. Candidates: [('-android uiautomator', 'new UiSelector().descriptionContains("Home")'), ('id', 'com.zee5.hipi:id/clFeedContainer'), ('id', 'com.zee5.hipi:id/playerView'), ('-android uiautomator', 'new UiSelector().clickable(true).text("Profile")')]. Last error: None
+2026-08-12 16:32:36 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_163235.png
+2026-08-12 16:32:36 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_163236.xml
+2026-08-12 16:32:36 [WARNING ] login_page.py:594 — Home page not displayed
+2026-08-12 16:32:37 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/test_like_video_20260812_163236.png
+2026-08-12 16:32:37 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/test_like_video_20260812_163237.xml
+2026-08-12 16:32:37 [ERROR   ] conftest.py:355 — Test FAILED: test_like_video
+2026-08-12 16:32:37 [INFO    ] conftest.py:262 — Closing driver session.

@@ -1,0 +1,682 @@
+2026-08-12 14:48:14 [INFO    ] conftest.py:363 — ==================================================
+2026-08-12 14:48:14 [INFO    ] conftest.py:364 — PYTEST SESSION START
+2026-08-12 14:48:14 [INFO    ] conftest.py:365 — ==================================================
+2026-08-12 14:48:14 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 14:48:14 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 14:48:14 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 14:48:14 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 14:48:14 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 14:48:14 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 14:48:14 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 14:48:14 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 14:48:14 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 14:48:40 [INFO    ] driver_factory.py:108 — App launched by driver. Waiting for stabilization...
+2026-08-12 14:48:42 [INFO    ] driver_factory.py:111 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-12 14:48:42 [INFO    ] conftest.py:238 — Driver created successfully.
+2026-08-12 14:48:48 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-12 14:49:00 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-12 14:49:00 [INFO    ] conftest.py:153 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-12 14:49:00 [INFO    ] conftest.py:251 — DRIVER SETUP COMPLETE
+2026-08-12 14:49:00 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-12 14:49:00 [INFO    ] base_test.py:58 — login_and_reach_feed: START
+2026-08-12 14:49:00 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-12 14:49:00 [INFO    ] login_page.py:635 — ========== LOGIN FLOW START ==========
+2026-08-12 14:49:02 [INFO    ] login_page.py:34 — Opening profile tab
+2026-08-12 14:49:03 [INFO    ] login_page.py:44 — Profile tab open attempt 1/2
+2026-08-12 14:49:05 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-12 14:49:10 [INFO    ] base_page.py:84 — wait_for_any_visible matched: ('-android uiautomator', 'new UiSelector().textContains("Continue")')
+2026-08-12 14:49:10 [INFO    ] login_page.py:79 — Profile tab opened (element click, verified)
+2026-08-12 14:49:10 [INFO    ] login_page.py:217 — Clicking continue button
+2026-08-12 14:49:11 [INFO    ] base_page.py:110 — Clicked: ('-android uiautomator', 'new UiSelector().textContains("Continue")')
+2026-08-12 14:49:11 [INFO    ] login_page.py:227 — Continue button clicked
+2026-08-12 14:49:11 [INFO    ] login_page.py:255 — Entering mobile number: 9876543210
+2026-08-12 14:49:12 [INFO    ] base_page.py:136 — Entered text '9876543210' into ('class name', 'android.widget.EditText')
+2026-08-12 14:49:12 [INFO    ] base_page.py:204 — Keyboard hidden.
+2026-08-12 14:49:12 [INFO    ] login_page.py:269 — Mobile number entered
+2026-08-12 14:49:12 [INFO    ] login_page.py:294 — Clicking proceed button
+2026-08-12 14:49:13 [INFO    ] base_page.py:110 — Clicked: ('accessibility id', 'Proceed')
+2026-08-12 14:49:13 [INFO    ] login_page.py:304 — Proceed button clicked
+2026-08-12 14:49:13 [INFO    ] login_page.py:332 — Entering OTP: 5186
+2026-08-12 14:49:15 [INFO    ] base_page.py:136 — Entered text '5186' into ('class name', 'android.widget.EditText')
+2026-08-12 14:49:15 [INFO    ] base_page.py:204 — Keyboard hidden.
+2026-08-12 14:49:15 [INFO    ] login_page.py:351 — OTP entered successfully
+2026-08-12 14:49:15 [INFO    ] login_page.py:456 — Waiting for OTP verification outcome (sheet closes = success, sheet stays open = invalid)...
+2026-08-12 14:49:16 [INFO    ] login_page.py:486 — Login sheet indicator present at start: True
+2026-08-12 14:49:21 [INFO    ] login_page.py:501 — Login sheet closed -> treating as login SUCCESS
+2026-08-12 14:49:27 [INFO    ] login_page.py:761 — ========== LOGIN SUCCESS ==========
+2026-08-12 14:49:27 [INFO    ] login_page.py:575 — Validating home page
+2026-08-12 14:49:43 [INFO    ] base_page.py:84 — wait_for_any_visible matched: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-12 14:49:43 [INFO    ] login_page.py:588 — Home page displayed
+2026-08-12 14:49:43 [INFO    ] feed_page.py:58 — Waiting for feed to be ready
+2026-08-12 14:49:53 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 10s. Candidates: [('id', 'com.zee5.hipi:id/ivLike'), ('id', 'com.zee5.hipi:id/ivComment'), ('id', 'com.zee5.hipi:id/clFeedContainer')]. Last error: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.doFindElementOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/find.js:24:13)
+    at async doFind (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:24:23)
+    at async wrappedCondFn (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:97:20)
+    at async spin (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:174:24)
+    at async waitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:192:12)
+    at async AndroidUiautomator2Driver.implicitWaitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:99:16)
+    at async AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:45:9)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElements (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:30:16)
+2026-08-12 14:49:53 [ERROR   ] screenshot_utils.py:58 — Screenshot capture failed: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getScreenshot (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/screenshot.js:72:19)
+2026-08-12 14:49:53 [ERROR   ] screenshot_utils.py:81 — Page source save failed: Message: 'GET /session/914dcd35-8f10-4c47-a9e2-1b72a6a6924d/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+InvalidContextError: 'GET /session/914dcd35-8f10-4c47-a9e2-1b72a6a6924d/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.proxyCommand (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:32:19)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:325:49)
+    at runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:121:30)
+    at /opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:171:12
+    at AsyncLock._promiseTry (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:306:31)
+    at exec (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:170:9)
+    at AsyncLock.acquire (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:189:3)
+    at AndroidUiautomator2Driver.executeCommand (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:161:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async defaultBehavior (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:634:20)
+    at async AppiumDriver.executeWrappedCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:726:22)
+    at async AppiumDriver.executeCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:645:21)
+    at async doJwpProxy (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:476:9)
+    at async asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:307:21)
+2026-08-12 14:49:53 [ERROR   ] feed_page.py:81 — Feed not ready: Message: None of the candidate locators became visible within 10s: [('id', 'com.zee5.hipi:id/ivLike'), ('id', 'com.zee5.hipi:id/ivComment'), ('id', 'com.zee5.hipi:id/clFeedContainer')]
+
+2026-08-12 14:49:53 [ERROR   ] screenshot_utils.py:58 — Screenshot capture failed: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getScreenshot (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/screenshot.js:72:19)
+2026-08-12 14:49:53 [ERROR   ] screenshot_utils.py:81 — Page source save failed: Message: 'GET /session/914dcd35-8f10-4c47-a9e2-1b72a6a6924d/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+InvalidContextError: 'GET /session/914dcd35-8f10-4c47-a9e2-1b72a6a6924d/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.proxyCommand (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:32:19)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:325:49)
+    at runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:121:30)
+    at /opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:171:12
+    at AsyncLock._promiseTry (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:306:31)
+    at exec (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:170:9)
+    at AsyncLock.acquire (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:189:3)
+    at AndroidUiautomator2Driver.executeCommand (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:161:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async defaultBehavior (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:634:20)
+    at async AppiumDriver.executeWrappedCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:726:22)
+    at async AppiumDriver.executeCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:645:21)
+    at async doJwpProxy (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:476:9)
+    at async asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:307:21)
+2026-08-12 14:49:53 [ERROR   ] screenshot_utils.py:58 — Screenshot capture failed: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getScreenshot (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/screenshot.js:72:19)
+2026-08-12 14:49:53 [ERROR   ] screenshot_utils.py:81 — Page source save failed: Message: 'GET /session/914dcd35-8f10-4c47-a9e2-1b72a6a6924d/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+InvalidContextError: 'GET /session/914dcd35-8f10-4c47-a9e2-1b72a6a6924d/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.proxyCommand (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:32:19)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:325:49)
+    at runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:121:30)
+    at /opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:171:12
+    at AsyncLock._promiseTry (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:306:31)
+    at exec (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:170:9)
+    at AsyncLock.acquire (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:189:3)
+    at AndroidUiautomator2Driver.executeCommand (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:161:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async defaultBehavior (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:634:20)
+    at async AppiumDriver.executeWrappedCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:726:22)
+    at async AppiumDriver.executeCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:645:21)
+    at async doJwpProxy (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:476:9)
+    at async asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:307:21)
+2026-08-12 14:49:53 [ERROR   ] conftest.py:355 — Test FAILED: test_like_video
+2026-08-12 14:49:53 [INFO    ] conftest.py:262 — Closing driver session.
+2026-08-12 14:49:55 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 14:49:55 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 14:49:55 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 14:49:55 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 14:49:55 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 14:49:55 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 14:49:55 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 14:49:55 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 14:49:55 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 14:50:03 [INFO    ] driver_factory.py:108 — App launched by driver. Waiting for stabilization...
+2026-08-12 14:50:05 [INFO    ] driver_factory.py:111 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-12 14:50:05 [INFO    ] conftest.py:238 — Driver created successfully.
+2026-08-12 14:50:11 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-12 14:50:22 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-12 14:50:22 [INFO    ] conftest.py:153 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-12 14:50:22 [INFO    ] conftest.py:251 — DRIVER SETUP COMPLETE
+2026-08-12 14:50:22 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-12 14:50:22 [INFO    ] base_test.py:58 — login_and_reach_feed: START
+2026-08-12 14:50:22 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-12 14:50:22 [INFO    ] login_page.py:635 — ========== LOGIN FLOW START ==========
+2026-08-12 14:50:23 [INFO    ] login_page.py:34 — Opening profile tab
+2026-08-12 14:50:24 [INFO    ] login_page.py:44 — Profile tab open attempt 1/2
+2026-08-12 14:50:25 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-12 14:50:35 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:50:36 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_145035.png
+2026-08-12 14:50:36 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_145036.xml
+2026-08-12 14:50:36 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 14:50:48 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:50:48 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_145048.png
+2026-08-12 14:50:48 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_145048.xml
+2026-08-12 14:50:48 [WARNING ] login_page.py:139 — Attempt 1 did not reach the login sheet, recovering and retrying...
+2026-08-12 14:50:48 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 14:50:51 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 14:50:53 [INFO    ] login_page.py:44 — Profile tab open attempt 2/2
+2026-08-12 14:50:54 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-12 14:51:04 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:51:05 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_145104.png
+2026-08-12 14:51:05 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_145105.xml
+2026-08-12 14:51:05 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 14:51:12 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.doFindElementOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/find.js:24:13)
+    at async doFind (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:24:23)
+    at async wrappedCondFn (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:97:20)
+    at async spin (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:174:24)
+    at async waitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:192:12)
+    at async AndroidUiautomator2Driver.implicitWaitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:99:16)
+    at async AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:45:9)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElements (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:30:16)
+2026-08-12 14:51:12 [ERROR   ] screenshot_utils.py:58 — Screenshot capture failed: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getScreenshot (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/screenshot.js:72:19)
+2026-08-12 14:51:12 [ERROR   ] screenshot_utils.py:81 — Page source save failed: Message: 'GET /session/4bf3eda0-e19d-47e1-ab3b-e59c65b0a3f2/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+InvalidContextError: 'GET /session/4bf3eda0-e19d-47e1-ab3b-e59c65b0a3f2/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.proxyCommand (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:32:19)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:325:49)
+    at runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:121:30)
+    at /opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:171:12
+    at AsyncLock._promiseTry (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:306:31)
+    at exec (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:170:9)
+    at AsyncLock.acquire (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:189:3)
+    at AndroidUiautomator2Driver.executeCommand (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:161:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async defaultBehavior (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:634:20)
+    at async AppiumDriver.executeWrappedCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:726:22)
+    at async AppiumDriver.executeCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:645:21)
+    at async doJwpProxy (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:476:9)
+    at async asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:307:21)
+2026-08-12 14:51:12 [WARNING ] login_page.py:139 — Attempt 2 did not reach the login sheet, recovering and retrying...
+2026-08-12 14:51:12 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 14:51:15 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 14:51:17 [ERROR   ] login_page.py:152 — Unable to open profile tab / reach login sheet after 2 attempts
+2026-08-12 14:51:17 [ERROR   ] screenshot_utils.py:58 — Screenshot capture failed: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getScreenshot (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/screenshot.js:72:19)
+2026-08-12 14:51:17 [ERROR   ] screenshot_utils.py:81 — Page source save failed: Message: 'GET /session/4bf3eda0-e19d-47e1-ab3b-e59c65b0a3f2/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+InvalidContextError: 'GET /session/4bf3eda0-e19d-47e1-ab3b-e59c65b0a3f2/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.proxyCommand (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:32:19)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:325:49)
+    at runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:121:30)
+    at /opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:171:12
+    at AsyncLock._promiseTry (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:306:31)
+    at exec (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:170:9)
+    at AsyncLock.acquire (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:189:3)
+    at AndroidUiautomator2Driver.executeCommand (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:161:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async defaultBehavior (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:634:20)
+    at async AppiumDriver.executeWrappedCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:726:22)
+    at async AppiumDriver.executeCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:645:21)
+    at async doJwpProxy (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:476:9)
+    at async asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:307:21)
+2026-08-12 14:51:17 [WARNING ] base_page.py:172 — Error checking display status for ('-android uiautomator', 'new UiSelector().text("Edit Profile")'): Message: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.doFindElementOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/find.js:24:13)
+    at async doFind (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:24:23)
+    at async wrappedCondFn (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:97:20)
+    at async spin (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:174:24)
+    at async waitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:192:12)
+    at async AndroidUiautomator2Driver.implicitWaitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:99:16)
+    at async AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:45:9)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 14:51:17 [ERROR   ] login_page.py:782 — Login flow failed: Unable to open profile tab / reach login sheet after 2 attempts
+2026-08-12 14:51:17 [ERROR   ] screenshot_utils.py:58 — Screenshot capture failed: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getScreenshot (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/screenshot.js:72:19)
+2026-08-12 14:51:17 [ERROR   ] screenshot_utils.py:81 — Page source save failed: Message: 'GET /session/4bf3eda0-e19d-47e1-ab3b-e59c65b0a3f2/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+InvalidContextError: 'GET /session/4bf3eda0-e19d-47e1-ab3b-e59c65b0a3f2/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.proxyCommand (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:32:19)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:325:49)
+    at runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:121:30)
+    at /opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:171:12
+    at AsyncLock._promiseTry (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:306:31)
+    at exec (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:170:9)
+    at AsyncLock.acquire (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:189:3)
+    at AndroidUiautomator2Driver.executeCommand (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:161:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async defaultBehavior (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:634:20)
+    at async AppiumDriver.executeWrappedCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:726:22)
+    at async AppiumDriver.executeCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:645:21)
+    at async doJwpProxy (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:476:9)
+    at async asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:307:21)
+2026-08-12 14:51:17 [ERROR   ] screenshot_utils.py:58 — Screenshot capture failed: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getScreenshot (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/screenshot.js:72:19)
+2026-08-12 14:51:17 [ERROR   ] screenshot_utils.py:81 — Page source save failed: Message: 'GET /session/4bf3eda0-e19d-47e1-ab3b-e59c65b0a3f2/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+InvalidContextError: 'GET /session/4bf3eda0-e19d-47e1-ab3b-e59c65b0a3f2/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.proxyCommand (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:32:19)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:325:49)
+    at runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:121:30)
+    at /opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:171:12
+    at AsyncLock._promiseTry (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:306:31)
+    at exec (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:170:9)
+    at AsyncLock.acquire (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:189:3)
+    at AndroidUiautomator2Driver.executeCommand (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:161:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async defaultBehavior (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:634:20)
+    at async AppiumDriver.executeWrappedCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:726:22)
+    at async AppiumDriver.executeCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:645:21)
+    at async doJwpProxy (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:476:9)
+    at async asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:307:21)
+2026-08-12 14:51:17 [ERROR   ] conftest.py:355 — Test FAILED: test_add_comment
+2026-08-12 14:51:17 [INFO    ] conftest.py:262 — Closing driver session.
+2026-08-12 14:51:23 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 14:51:23 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 14:51:23 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 14:51:23 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 14:51:23 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 14:51:23 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 14:51:23 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 14:51:23 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 14:51:23 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 14:51:28 [INFO    ] driver_factory.py:108 — App launched by driver. Waiting for stabilization...
+2026-08-12 14:51:30 [INFO    ] driver_factory.py:111 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-12 14:51:30 [INFO    ] conftest.py:238 — Driver created successfully.
+2026-08-12 14:51:35 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-12 14:51:46 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-12 14:51:46 [INFO    ] conftest.py:153 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-12 14:51:46 [INFO    ] conftest.py:251 — DRIVER SETUP COMPLETE
+2026-08-12 14:51:46 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-12 14:51:46 [INFO    ] base_test.py:58 — login_and_reach_feed: START
+2026-08-12 14:51:46 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-12 14:51:46 [INFO    ] login_page.py:635 — ========== LOGIN FLOW START ==========
+2026-08-12 14:51:47 [INFO    ] login_page.py:34 — Opening profile tab
+2026-08-12 14:51:48 [INFO    ] login_page.py:44 — Profile tab open attempt 1/2
+2026-08-12 14:51:49 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-12 14:52:00 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:52:00 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_145200.png
+2026-08-12 14:52:00 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_145200.xml
+2026-08-12 14:52:00 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 14:52:07 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.doFindElementOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/find.js:24:13)
+    at async doFind (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:24:23)
+    at async wrappedCondFn (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:97:20)
+    at async spin (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:174:24)
+    at async waitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:192:12)
+    at async AndroidUiautomator2Driver.implicitWaitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:99:16)
+    at async AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:45:9)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElements (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:30:16)
+2026-08-12 14:52:07 [ERROR   ] screenshot_utils.py:58 — Screenshot capture failed: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getScreenshot (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/screenshot.js:72:19)
+2026-08-12 14:52:07 [ERROR   ] screenshot_utils.py:81 — Page source save failed: Message: 'GET /session/f643744b-93bb-4f44-8091-70f04ad4d372/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+InvalidContextError: 'GET /session/f643744b-93bb-4f44-8091-70f04ad4d372/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.proxyCommand (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:32:19)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:325:49)
+    at runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:121:30)
+    at /opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:171:12
+    at AsyncLock._promiseTry (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:306:31)
+    at exec (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:170:9)
+    at AsyncLock.acquire (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:189:3)
+    at AndroidUiautomator2Driver.executeCommand (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:161:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async defaultBehavior (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:634:20)
+    at async AppiumDriver.executeWrappedCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:726:22)
+    at async AppiumDriver.executeCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:645:21)
+    at async doJwpProxy (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:476:9)
+    at async asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:307:21)
+2026-08-12 14:52:07 [WARNING ] login_page.py:139 — Attempt 1 did not reach the login sheet, recovering and retrying...
+2026-08-12 14:52:07 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 14:52:11 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 14:52:13 [INFO    ] login_page.py:44 — Profile tab open attempt 2/2
+2026-08-12 14:52:13 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]"): Message: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.doFindElementOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/find.js:24:13)
+    at async doFind (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:24:23)
+    at async wrappedCondFn (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:97:20)
+    at async spin (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:174:24)
+    at async waitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:192:12)
+    at async AndroidUiautomator2Driver.implicitWaitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:99:16)
+    at async AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:45:9)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 14:52:13 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 14:52:16 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 14:52:16 [ERROR   ] screenshot_utils.py:58 — Screenshot capture failed: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getScreenshot (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/screenshot.js:72:19)
+2026-08-12 14:52:16 [ERROR   ] screenshot_utils.py:81 — Page source save failed: Message: 'GET /session/f643744b-93bb-4f44-8091-70f04ad4d372/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+InvalidContextError: 'GET /session/f643744b-93bb-4f44-8091-70f04ad4d372/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.proxyCommand (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:32:19)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:325:49)
+    at runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:121:30)
+    at /opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:171:12
+    at AsyncLock._promiseTry (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:306:31)
+    at exec (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:170:9)
+    at AsyncLock.acquire (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:189:3)
+    at AndroidUiautomator2Driver.executeCommand (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:161:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async defaultBehavior (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:634:20)
+    at async AppiumDriver.executeWrappedCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:726:22)
+    at async AppiumDriver.executeCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:645:21)
+    at async doJwpProxy (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:476:9)
+    at async asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:307:21)
+2026-08-12 14:52:16 [WARNING ] login_page.py:88 — Element-based click failed: Unable to click ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]") after 1 retries. Last exception: Message: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.doFindElementOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/find.js:24:13)
+    at async doFind (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:24:23)
+    at async wrappedCondFn (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:97:20)
+    at async spin (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:174:24)
+    at async waitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:192:12)
+    at async AndroidUiautomator2Driver.implicitWaitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:99:16)
+    at async AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:45:9)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 14:52:16 [WARNING ] login_page.py:115 — Coordinate tap failed: Message: 'GET /window/current/size' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /window/current/size' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getWindowSize (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/viewport.js:73:13)
+    at async AndroidUiautomator2Driver.getWindowRect (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/viewport.js:53:31)
+2026-08-12 14:52:22 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: Message: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /elements' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.doFindElementOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/find.js:24:13)
+    at async doFind (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:24:23)
+    at async wrappedCondFn (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:97:20)
+    at async spin (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:174:24)
+    at async waitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:192:12)
+    at async AndroidUiautomator2Driver.implicitWaitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:99:16)
+    at async AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:45:9)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElements (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:30:16)
+2026-08-12 14:52:22 [ERROR   ] screenshot_utils.py:58 — Screenshot capture failed: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getScreenshot (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/screenshot.js:72:19)
+2026-08-12 14:52:22 [ERROR   ] screenshot_utils.py:81 — Page source save failed: Message: 'GET /session/f643744b-93bb-4f44-8091-70f04ad4d372/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+InvalidContextError: 'GET /session/f643744b-93bb-4f44-8091-70f04ad4d372/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.proxyCommand (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:32:19)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:325:49)
+    at runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:121:30)
+    at /opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:171:12
+    at AsyncLock._promiseTry (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:306:31)
+    at exec (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:170:9)
+    at AsyncLock.acquire (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:189:3)
+    at AndroidUiautomator2Driver.executeCommand (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:161:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async defaultBehavior (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:634:20)
+    at async AppiumDriver.executeWrappedCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:726:22)
+    at async AppiumDriver.executeCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:645:21)
+    at async doJwpProxy (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:476:9)
+    at async asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:307:21)
+2026-08-12 14:52:22 [WARNING ] login_page.py:139 — Attempt 2 did not reach the login sheet, recovering and retrying...
+2026-08-12 14:52:22 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 14:52:25 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 14:52:27 [ERROR   ] login_page.py:152 — Unable to open profile tab / reach login sheet after 2 attempts
+2026-08-12 14:52:27 [ERROR   ] screenshot_utils.py:58 — Screenshot capture failed: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getScreenshot (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/screenshot.js:72:19)
+2026-08-12 14:52:27 [ERROR   ] screenshot_utils.py:81 — Page source save failed: Message: 'GET /session/f643744b-93bb-4f44-8091-70f04ad4d372/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+InvalidContextError: 'GET /session/f643744b-93bb-4f44-8091-70f04ad4d372/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.proxyCommand (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:32:19)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:325:49)
+    at runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:121:30)
+    at /opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:171:12
+    at AsyncLock._promiseTry (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:306:31)
+    at exec (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:170:9)
+    at AsyncLock.acquire (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:189:3)
+    at AndroidUiautomator2Driver.executeCommand (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:161:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async defaultBehavior (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:634:20)
+    at async AppiumDriver.executeWrappedCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:726:22)
+    at async AppiumDriver.executeCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:645:21)
+    at async doJwpProxy (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:476:9)
+    at async asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:307:21)
+2026-08-12 14:52:27 [WARNING ] base_page.py:172 — Error checking display status for ('-android uiautomator', 'new UiSelector().text("Edit Profile")'): Message: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'POST /element' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.doFindElementOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/find.js:24:13)
+    at async doFind (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:24:23)
+    at async wrappedCondFn (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:97:20)
+    at async spin (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:174:24)
+    at async waitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:192:12)
+    at async AndroidUiautomator2Driver.implicitWaitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:99:16)
+    at async AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:45:9)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-12 14:52:27 [ERROR   ] login_page.py:782 — Login flow failed: Unable to open profile tab / reach login sheet after 2 attempts
+2026-08-12 14:52:27 [ERROR   ] screenshot_utils.py:58 — Screenshot capture failed: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getScreenshot (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/screenshot.js:72:19)
+2026-08-12 14:52:27 [ERROR   ] screenshot_utils.py:81 — Page source save failed: Message: 'GET /session/f643744b-93bb-4f44-8091-70f04ad4d372/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+InvalidContextError: 'GET /session/f643744b-93bb-4f44-8091-70f04ad4d372/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.proxyCommand (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:32:19)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:325:49)
+    at runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:121:30)
+    at /opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:171:12
+    at AsyncLock._promiseTry (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:306:31)
+    at exec (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:170:9)
+    at AsyncLock.acquire (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:189:3)
+    at AndroidUiautomator2Driver.executeCommand (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:161:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async defaultBehavior (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:634:20)
+    at async AppiumDriver.executeWrappedCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:726:22)
+    at async AppiumDriver.executeCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:645:21)
+    at async doJwpProxy (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:476:9)
+    at async asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:307:21)
+2026-08-12 14:52:27 [ERROR   ] screenshot_utils.py:58 — Screenshot capture failed: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getScreenshot (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/screenshot.js:72:19)
+2026-08-12 14:52:27 [ERROR   ] screenshot_utils.py:81 — Page source save failed: Message: 'GET /session/f643744b-93bb-4f44-8091-70f04ad4d372/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+InvalidContextError: 'GET /session/f643744b-93bb-4f44-8091-70f04ad4d372/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.proxyCommand (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:32:19)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:325:49)
+    at runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:121:30)
+    at /opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:171:12
+    at AsyncLock._promiseTry (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:306:31)
+    at exec (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:170:9)
+    at AsyncLock.acquire (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:189:3)
+    at AndroidUiautomator2Driver.executeCommand (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:161:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async defaultBehavior (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:634:20)
+    at async AppiumDriver.executeWrappedCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:726:22)
+    at async AppiumDriver.executeCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:645:21)
+    at async doJwpProxy (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:476:9)
+    at async asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:307:21)
+2026-08-12 14:52:27 [ERROR   ] conftest.py:355 — Test FAILED: test_pause_and_resume_reel
+2026-08-12 14:52:27 [INFO    ] conftest.py:262 — Closing driver session.
+2026-08-12 14:52:28 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 14:52:28 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 14:52:28 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 14:52:28 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 14:52:28 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 14:52:28 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 14:52:28 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 14:52:28 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 14:52:28 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 14:52:34 [INFO    ] driver_factory.py:108 — App launched by driver. Waiting for stabilization...
+2026-08-12 14:52:36 [INFO    ] driver_factory.py:111 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-12 14:52:36 [INFO    ] conftest.py:238 — Driver created successfully.
+2026-08-12 14:52:41 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-12 14:52:52 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-12 14:52:52 [INFO    ] conftest.py:153 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-12 14:52:52 [INFO    ] conftest.py:251 — DRIVER SETUP COMPLETE
+2026-08-12 14:52:52 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-12 14:52:52 [INFO    ] base_test.py:58 — login_and_reach_feed: START
+2026-08-12 14:52:52 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-12 14:52:52 [INFO    ] login_page.py:635 — ========== LOGIN FLOW START ==========
+2026-08-12 14:52:54 [INFO    ] login_page.py:34 — Opening profile tab
+2026-08-12 14:52:55 [INFO    ] login_page.py:44 — Profile tab open attempt 1/2
+2026-08-12 14:52:56 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-12 14:53:06 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:53:08 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_145306.png
+2026-08-12 14:53:08 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_145308.xml
+2026-08-12 14:53:08 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 14:53:20 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:53:21 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_145320.png
+2026-08-12 14:53:21 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_145321.xml
+2026-08-12 14:53:21 [WARNING ] login_page.py:139 — Attempt 1 did not reach the login sheet, recovering and retrying...
+2026-08-12 14:53:21 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 14:53:24 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 14:53:26 [INFO    ] login_page.py:44 — Profile tab open attempt 2/2
+2026-08-12 14:53:27 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-12 14:53:38 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:53:39 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_145338.png
+2026-08-12 14:53:39 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_145339.xml
+2026-08-12 14:53:39 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 14:53:52 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:53:53 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_145352.png
+2026-08-12 14:53:54 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_145353.xml
+2026-08-12 14:53:54 [WARNING ] login_page.py:139 — Attempt 2 did not reach the login sheet, recovering and retrying...
+2026-08-12 14:53:54 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 14:53:57 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 14:53:59 [ERROR   ] login_page.py:152 — Unable to open profile tab / reach login sheet after 2 attempts
+2026-08-12 14:54:00 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/profile_tab_failed_20260812_145359.png
+2026-08-12 14:54:00 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/profile_tab_failed_20260812_145400.xml
+2026-08-12 14:54:00 [INFO    ] login_page.py:191 — Already logged in — 'Edit Profile' visible. noReset=true preserved a previous session. Navigating to home feed.
+2026-08-12 14:54:01 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Home']]")
+2026-08-12 14:54:01 [INFO    ] login_page.py:203 — Navigated to home tab.
+2026-08-12 14:54:01 [INFO    ] login_page.py:660 — ========== LOGIN SKIPPED (ALREADY LOGGED IN) ==========
+2026-08-12 14:54:01 [INFO    ] login_page.py:575 — Validating home page
+2026-08-12 14:54:22 [INFO    ] base_page.py:84 — wait_for_any_visible matched: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-12 14:54:22 [INFO    ] login_page.py:588 — Home page displayed
+2026-08-12 14:54:22 [INFO    ] feed_page.py:58 — Waiting for feed to be ready
+2026-08-12 14:54:37 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 10s. Candidates: [('id', 'com.zee5.hipi:id/ivLike'), ('id', 'com.zee5.hipi:id/ivComment'), ('id', 'com.zee5.hipi:id/clFeedContainer')]. Last error: None
+2026-08-12 14:54:38 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_145437.png
+2026-08-12 14:54:38 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_145438.xml
+2026-08-12 14:54:38 [ERROR   ] feed_page.py:81 — Feed not ready: Message: None of the candidate locators became visible within 10s: [('id', 'com.zee5.hipi:id/ivLike'), ('id', 'com.zee5.hipi:id/ivComment'), ('id', 'com.zee5.hipi:id/clFeedContainer')]
+
+2026-08-12 14:54:39 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/feed_not_ready_20260812_145438.png
+2026-08-12 14:54:39 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/feed_not_ready_20260812_145439.xml
+2026-08-12 14:54:41 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/test_swipe_to_next_video_20260812_145439.png
+2026-08-12 14:54:41 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/test_swipe_to_next_video_20260812_145441.xml
+2026-08-12 14:54:41 [ERROR   ] conftest.py:355 — Test FAILED: test_swipe_to_next_video
+2026-08-12 14:54:41 [INFO    ] conftest.py:262 — Closing driver session.
+2026-08-12 14:54:42 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 14:54:42 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 14:54:42 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 14:54:42 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 14:54:42 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 14:54:42 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 14:54:42 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 14:54:42 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 14:54:42 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-12 14:54:45 [INFO    ] driver_factory.py:108 — App launched by driver. Waiting for stabilization...
+2026-08-12 14:54:47 [INFO    ] driver_factory.py:111 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-12 14:54:47 [INFO    ] conftest.py:238 — Driver created successfully.
+2026-08-12 14:54:52 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-12 14:55:04 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-12 14:55:04 [INFO    ] conftest.py:153 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-12 14:55:04 [INFO    ] conftest.py:251 — DRIVER SETUP COMPLETE
+2026-08-12 14:55:04 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-12 14:55:04 [INFO    ] test_login.py:126 — ========== SMOKE LOGIN START ==========
+2026-08-12 14:55:04 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-12 14:55:04 [INFO    ] login_page.py:635 — ========== LOGIN FLOW START ==========
+2026-08-12 14:55:05 [INFO    ] login_page.py:34 — Opening profile tab
+2026-08-12 14:55:06 [INFO    ] login_page.py:44 — Profile tab open attempt 1/2
+2026-08-12 14:55:07 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-12 14:55:18 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:55:19 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_145518.png
+2026-08-12 14:55:19 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_145519.xml
+2026-08-12 14:55:20 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 14:55:32 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:55:33 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_145532.png
+2026-08-12 14:55:33 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_145533.xml
+2026-08-12 14:55:33 [WARNING ] login_page.py:139 — Attempt 1 did not reach the login sheet, recovering and retrying...
+2026-08-12 14:55:33 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 14:55:36 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 14:55:38 [INFO    ] login_page.py:44 — Profile tab open attempt 2/2
+2026-08-12 14:55:39 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-12 14:55:50 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:55:51 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_145550.png
+2026-08-12 14:55:51 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_145551.xml
+2026-08-12 14:55:51 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-12 14:56:03 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-12 14:56:04 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260812_145603.png
+2026-08-12 14:56:04 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260812_145604.xml
+2026-08-12 14:56:04 [WARNING ] login_page.py:139 — Attempt 2 did not reach the login sheet, recovering and retrying...
+2026-08-12 14:56:04 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-12 14:56:08 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-12 14:56:10 [ERROR   ] login_page.py:152 — Unable to open profile tab / reach login sheet after 2 attempts
+2026-08-12 14:56:11 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/profile_tab_failed_20260812_145610.png
+2026-08-12 14:56:11 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/profile_tab_failed_20260812_145611.xml
+2026-08-12 14:56:11 [INFO    ] login_page.py:191 — Already logged in — 'Edit Profile' visible. noReset=true preserved a previous session. Navigating to home feed.
+2026-08-12 14:56:13 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Home']]")
+2026-08-12 14:56:13 [INFO    ] login_page.py:203 — Navigated to home tab.
+2026-08-12 14:56:13 [INFO    ] login_page.py:660 — ========== LOGIN SKIPPED (ALREADY LOGGED IN) ==========
+2026-08-12 14:56:13 [INFO    ] test_login.py:134 — ========== SMOKE LOGIN SUCCESS ==========
+2026-08-12 14:56:13 [INFO    ] conftest.py:262 — Closing driver session.
+2026-08-12 14:56:17 [INFO    ] conftest.py:369 — ==================================================
+2026-08-12 14:56:17 [INFO    ] conftest.py:370 — PYTEST SESSION END | Exit status: 1
+2026-08-12 14:56:17 [INFO    ] conftest.py:371 — ==================================================

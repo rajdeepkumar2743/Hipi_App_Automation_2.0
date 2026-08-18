@@ -1,0 +1,10 @@
+2026-08-18 11:33:50 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-18 11:33:50 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-18 11:33:50 [INFO    ] login_page.py:556 — Validating home page
+2026-08-18 11:33:50 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-18 11:33:50 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-18 11:33:50 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-18 11:33:50 [INFO    ] feed_page.py:668 — Pausing current reel
+2026-08-18 11:33:50 [INFO    ] gestures.py:29 — Tap performed at X:432 Y:960
+2026-08-18 11:33:50 [INFO    ] feed_page.py:683 — Reel paused (coordinate tap on video area)
+2026-08-18 11:33:50 [INFO    ] test_feed.py:325 — TEST PASSED: Pause reel

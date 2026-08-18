@@ -1,0 +1,129 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"
+        Verify the comment sheet can be opened and closed
+        without submitting a comment.
+        Asserts: sheet is open after open tap, closed after close tap.
+        ","32506","Open comment sheet and close it without commenting","tests","2026-08-18","passed","2026-08-18","TestFeedCommentSheet","test_feed","",""
+"
+        Verify a creator can be followed from the feed.
+        If already following, the test passes (idempotent).
+        If not following, tap Follow and verify 'Following' appears.
+        ","1163","Follow a creator from the feed","tests","2026-08-18","passed","2026-08-18","TestFeedSocial","test_feed","",""
+"
+        Verify tapping the Discover tab navigates away from the feed.
+        Asserts: page source changes after tapping Discover.
+        ","1488","Navigate to Discover tab from feed","tests","2026-08-18","passed","2026-08-18","TestFeedBottomNavigation","test_feed","",""
+"
+        Verify tapping the Home tab in the bottom nav bar
+        keeps/returns to the home feed.
+        ","1374","Navigate to Home tab from feed","tests","2026-08-18","passed","2026-08-18","TestFeedBottomNavigation","test_feed","",""
+"","45682","Login Validation Test","tests","2026-08-18","passed","2026-08-18","TestLogin","test_login","",""
+"
+        Verify each comment from COMMENTS list can be submitted.
+        Parametrized: runs once per comment string.
+        ","9981","Add a comment using each available comment text","tests","2026-08-18","passed","2026-08-18","TestFeedEngagement","test_feed","",""
+"","10454","Login Validation Test","tests","2026-08-18","passed","2026-08-18","TestLogin","test_login","",""
+"","1","Invalid OTP Validation","tests","2026-08-17","skipped","2026-08-17","TestLogin","test_login","",""
+"
+        Verify:
+          1. Three-dots button opens the report/content menu.
+          2. The report popup is visible.
+          3. Tapping 'Cancel' closes the sheet.
+          4. The popup is gone after closing.
+        ","8068","Open three-dots menu and close via Cancel button","tests","2026-08-18","passed","2026-08-18","TestFeedThreeDotsMenu","test_feed","",""
+"
+        Verify the Like button can be tapped without error.
+        The like state is visible on the button (toggled highlight),
+        but on a Compose app without stable resource-ids we assert
+        the action completed without raising an exception.
+        ","1711","Like a video","tests","2026-08-18","passed","2026-08-18","TestFeedEngagement","test_feed","",""
+"","14177","Login Validation Test","tests","2026-08-18","passed","2026-08-18","TestLogin","test_login","",""
+"
+        Verify pause → wait → resume flow:
+          tap once to pause → wait 3s → tap again to resume.
+        ","3840","Pause a reel then resume playback","tests","2026-08-18","passed","2026-08-18","TestFeedVideoControls","test_feed","",""
+"
+        Verify a comment can be typed and submitted.
+        Asserts: comment sheet closes after send (successful submission).
+        ","14625","Add a comment to a video","tests","2026-08-18","passed","2026-08-18","TestFeedEngagement","test_feed","",""
+"
+        Verify the comment text input is visible when the sheet opens
+        and the keyboard appears after tapping it.
+        ","26121","Comment input field is visible and focusable in comment sheet","tests","2026-08-18","passed","2026-08-18","TestFeedCommentSheet","test_feed","",""
+"","14570","Login Validation Test","tests","2026-08-18","passed","2026-08-18","TestLogin","test_login","",""
+"
+        Verify each comment from COMMENTS list can be submitted.
+        Parametrized: runs once per comment string.
+        ","10820","Add a comment using each available comment text","tests","2026-08-18","passed","2026-08-18","TestFeedEngagement","test_feed","",""
+"
+        Verify the Like button toggles: tap once to like,
+        tap again to unlike. Leaves test account in clean state.
+        ","4453","Like then unlike a video (toggle)","tests","2026-08-18","passed","2026-08-18","TestFeedEngagement","test_feed","",""
+"
+        Verify the Mute button can be tapped.
+        The mute icon changes state (filled/outline) on the screen.
+        ","29831","Mute a video","tests","2026-08-18","passed","2026-08-18","TestFeedVideoControls","test_feed","",""
+"
+        Verify:
+          1. Three-dots button opens the report/content menu.
+          2. The report popup is visible (sheet opened correctly).
+          3. Tapping the X icon closes the sheet.
+          4. The popup is gone after closing.
+        ","12149","Open three-dots menu and close via X button","tests","2026-08-18","passed","2026-08-18","TestFeedThreeDotsMenu","test_feed","",""
+"
+        Verify each comment from COMMENTS list can be submitted.
+        Parametrized: runs once per comment string.
+        ","6633","Add a comment using each available comment text","tests","2026-08-18","passed","2026-08-18","TestFeedEngagement","test_feed","",""
+"","11299","Valid Login Smoke Test","tests","2026-08-18","passed","2026-08-18","TestLogin","test_login","",""
+"
+        Verify swiping up navigates to the next video.
+        Asserts: page source changes (different video loaded).
+        ","9284","Swipe up to next video","tests","2026-08-18","passed","2026-08-18","TestFeedNavigation","test_feed","",""
+"
+        Simulates a real user session: login, scroll through 10 reels,
+        and perform 2–5 random actions per reel.
+        This is a broad stability/smoke test for the feed as a whole.
+        Individual action correctness is verified in the tests above.
+        ","218700","Continuous human-like feed automation (10 reels)","tests","2026-08-18","passed","2026-08-18","TestFeedE2E","test_feed","",""
+"
+        Verify each comment from COMMENTS list can be submitted.
+        Parametrized: runs once per comment string.
+        ","6684","Add a comment using each available comment text","tests","2026-08-18","passed","2026-08-18","TestFeedEngagement","test_feed","",""
+"
+        Verify the user can swipe through multiple videos in sequence.
+        Tests that the feed remains stable across consecutive swipes.
+        ","48156","Swipe through 3 consecutive videos","tests","2026-08-18","broken","2026-08-18","TestFeedNavigation","test_feed","",""
+"
+        Verify mute toggles correctly: tap to mute, tap again to unmute.
+        Leaves test account audio state unchanged.
+        ","37105","Mute then unmute a video (toggle)","tests","2026-08-18","passed","2026-08-18","TestFeedVideoControls","test_feed","",""
+"
+        Verify tapping the creator username/avatar opens their profile.
+        Uses a coordinate tap since the username text is dynamic.
+        Asserts: page source changes after tap (profile screen loaded).
+        ","43379","Open creator profile from feed (coordinate tap)","tests","2026-08-18","passed","2026-08-18","TestFeedNavigation","test_feed","",""
+"","44362","Login Validation Test","tests","2026-08-18","passed","2026-08-18","TestLogin","test_login","",""
+"
+        Verify each comment from COMMENTS list can be submitted.
+        Parametrized: runs once per comment string.
+        ","8961","Add a comment using each available comment text","tests","2026-08-18","passed","2026-08-18","TestFeedEngagement","test_feed","",""
+"","13311","Login Validation Test","tests","2026-08-18","passed","2026-08-18","TestLogin","test_login","",""
+"
+        Verify the Save button can be tapped without error.
+        The save state changes the button icon on screen.
+        ","1319","Save a video","tests","2026-08-18","passed","2026-08-18","TestFeedEngagement","test_feed","",""
+"
+        Verify the Share button opens the Android system share sheet
+        and the app returns to the feed after dismissal.
+        The system share sheet cannot be verified via app element IDs
+        so we assert: share action completes + feed is still visible.
+        ","7921","Share a video (opens and dismisses share sheet)","tests","2026-08-18","passed","2026-08-18","TestFeedSocial","test_feed","",""
+"
+        Verify a single tap on the video area pauses playback.
+        On a Compose app the paused state is visual only; we assert
+        the tap action completes successfully.
+        ","1168","Pause a reel (single tap on video)","tests","2026-08-18","passed","2026-08-18","TestFeedVideoControls","test_feed","",""
+"
+        Verify each comment from COMMENTS list can be submitted.
+        Parametrized: runs once per comment string.
+        ","12641","Add a comment using each available comment text","tests","2026-08-18","passed","2026-08-18","TestFeedEngagement","test_feed","",""

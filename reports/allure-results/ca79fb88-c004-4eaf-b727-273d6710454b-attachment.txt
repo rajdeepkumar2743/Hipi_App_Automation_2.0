@@ -1,0 +1,49 @@
+2026-08-14 13:25:34 [INFO    ] conftest.py:253 — ==================================================
+2026-08-14 13:25:34 [INFO    ] conftest.py:254 — DRIVER SETUP START
+2026-08-14 13:25:34 [INFO    ] conftest.py:255 — ==================================================
+2026-08-14 13:25:34 [INFO    ] conftest.py:141 — Driver creation attempt 1/2
+2026-08-14 13:25:44 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-14 13:25:44 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-14 13:25:44 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-14 13:25:44 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-14 13:25:44 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-14 13:26:45 [ERROR   ] conftest.py:149 — Attempt 1 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-14 13:26:45 [INFO    ] conftest.py:157 — Waiting 3s before retry...
+2026-08-14 13:26:48 [INFO    ] conftest.py:141 — Driver creation attempt 2/2
+2026-08-14 13:26:58 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-14 13:26:58 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-14 13:26:58 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-14 13:26:58 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-14 13:26:58 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-14 13:27:58 [ERROR   ] conftest.py:149 — Attempt 2 failed: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-14 13:27:58 [ERROR   ] conftest.py:281 — Driver fixture setup failed: Driver creation failed after 2 attempts: Message: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+Stacktrace:
+UnknownError: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Error getting device API level. Original error: Error executing adbExec. Original error: 'Command '/Users/vc.rajdeep.kumar/Library/Android/sdk/platform-tools/adb -P 5037 -s emulator-5554 shell getprop ro.build.version.sdk' timed out after 30000ms'. Try to increase the 30000ms adb execution timeout represented by 'adbExecTimeout' capability
+    at ADB.getApiLevel (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/general-commands.js:101:19)
+    at async AndroidUiautomator2Driver.deleteSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:697:18)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:258:13)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)

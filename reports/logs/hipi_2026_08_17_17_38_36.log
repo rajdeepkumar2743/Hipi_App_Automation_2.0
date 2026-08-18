@@ -1,0 +1,481 @@
+2026-08-17 17:38:36 [INFO    ] conftest.py:476 — ==================================================
+2026-08-17 17:38:36 [INFO    ] conftest.py:477 — PYTEST SESSION START
+2026-08-17 17:38:36 [INFO    ] conftest.py:478 — ==================================================
+2026-08-17 17:38:36 [INFO    ] conftest.py:396 — LOGGED-IN DRIVER: setting up session-scoped driver...
+2026-08-17 17:38:36 [INFO    ] conftest.py:158 — Driver creation attempt 1/3
+2026-08-17 17:38:36 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-17 17:38:36 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-17 17:38:36 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
+2026-08-17 17:38:36 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
+2026-08-17 17:38:36 [INFO    ] driver_factory.py:151 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-17 17:38:41 [INFO    ] driver_factory.py:112 — App launched by driver. Waiting for stabilization...
+2026-08-17 17:38:43 [INFO    ] driver_factory.py:115 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-17 17:38:46 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-17 17:38:49 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-17 17:38:49 [INFO    ] login_page.py:599 — ========== LOGIN FLOW START ==========
+2026-08-17 17:38:50 [INFO    ] login_page.py:43 — Opening profile tab
+2026-08-17 17:38:51 [INFO    ] login_page.py:53 — Profile tab open attempt 1/2
+2026-08-17 17:38:52 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-17 17:38:53 [INFO    ] base_page.py:140 — wait_for_any_visible matched: ('class name', 'android.widget.EditText')
+2026-08-17 17:38:53 [INFO    ] login_page.py:78 — Profile tab opened (element click, verified)
+2026-08-17 17:38:53 [INFO    ] login_page.py:238 — Clicking continue button
+2026-08-17 17:38:54 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().textContains("Continue")')
+2026-08-17 17:38:54 [INFO    ] login_page.py:248 — Continue button clicked
+2026-08-17 17:38:54 [INFO    ] login_page.py:276 — Entering mobile number: 9876543210
+2026-08-17 17:38:54 [INFO    ] base_page.py:209 — Entered text '9876543210' into ('class name', 'android.widget.EditText')
+2026-08-17 17:38:54 [INFO    ] base_page.py:287 — Keyboard hidden.
+2026-08-17 17:38:55 [INFO    ] login_page.py:298 — Mobile number entered
+2026-08-17 17:38:55 [INFO    ] login_page.py:323 — Clicking proceed button
+2026-08-17 17:38:56 [INFO    ] base_page.py:173 — Clicked: ('accessibility id', 'Proceed')
+2026-08-17 17:38:56 [INFO    ] login_page.py:333 — Proceed button clicked
+2026-08-17 17:38:56 [INFO    ] login_page.py:361 — Entering OTP: 5186
+2026-08-17 17:38:56 [INFO    ] base_page.py:209 — Entered text '5186' into ('class name', 'android.widget.EditText')
+2026-08-17 17:38:56 [INFO    ] base_page.py:287 — Keyboard hidden.
+2026-08-17 17:38:56 [INFO    ] login_page.py:380 — OTP entered successfully
+2026-08-17 17:38:56 [INFO    ] login_page.py:466 — Waiting for OTP verification outcome (sheet closes = success, sheet stays open = invalid)...
+2026-08-17 17:38:56 [INFO    ] login_page.py:480 — Login sheet indicator present at start: True
+2026-08-17 17:38:58 [INFO    ] login_page.py:495 — Login sheet closed -> treating as login SUCCESS
+2026-08-17 17:38:58 [INFO    ] login_page.py:712 — ========== LOGIN SUCCESS ==========
+2026-08-17 17:38:58 [INFO    ] conftest.py:415 — LOGGED-IN DRIVER: login successful.
+2026-08-17 17:38:58 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:38:58 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:38:58 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:38:58 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:38:58 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:38:58 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:38:58 [INFO    ] feed_page.py:171 — Liking current video
+2026-08-17 17:38:59 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(0)')
+2026-08-17 17:38:59 [INFO    ] feed_page.py:181 — Video liked
+2026-08-17 17:38:59 [INFO    ] test_feed.py:99 — TEST PASSED: Like video
+2026-08-17 17:38:59 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:38:59 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:38:59 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:39:00 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:39:00 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:39:00 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:39:00 [INFO    ] feed_page.py:171 — Liking current video
+2026-08-17 17:39:01 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(0)')
+2026-08-17 17:39:01 [INFO    ] feed_page.py:181 — Video liked
+2026-08-17 17:39:02 [INFO    ] feed_page.py:213 — Unliking current video
+2026-08-17 17:39:03 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(0)')
+2026-08-17 17:39:03 [INFO    ] feed_page.py:223 — Video unliked
+2026-08-17 17:39:03 [INFO    ] test_feed.py:122 — TEST PASSED: Like/unlike toggle
+2026-08-17 17:39:03 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:39:03 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:39:03 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:39:03 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:39:03 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:39:03 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:39:03 [INFO    ] feed_page.py:363 — Adding comment: Awesome 🔥
+2026-08-17 17:39:03 [INFO    ] feed_page.py:253 — Opening comment sheet
+2026-08-17 17:39:04 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(1)')
+2026-08-17 17:39:05 [INFO    ] feed_page.py:267 — Comment sheet opened
+2026-08-17 17:39:05 [INFO    ] base_page.py:209 — Entered text 'Awesome 🔥' into ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:05 [INFO    ] base_page.py:287 — Keyboard hidden.
+2026-08-17 17:39:06 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivSend' or (@content-desc='Send' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:07 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivClose' or (@content-desc='Close' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:07 [INFO    ] feed_page.py:392 — Comment added
+2026-08-17 17:39:08 [INFO    ] base_page.py:277 — Element ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]") disappeared.
+2026-08-17 17:39:08 [INFO    ] test_feed.py:149 — TEST PASSED: Add comment
+2026-08-17 17:39:08 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:39:08 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:39:08 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:39:08 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:39:08 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:39:08 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:39:08 [INFO    ] feed_page.py:363 — Adding comment: Awesome 🔥
+2026-08-17 17:39:08 [INFO    ] feed_page.py:253 — Opening comment sheet
+2026-08-17 17:39:08 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(1)')
+2026-08-17 17:39:09 [INFO    ] feed_page.py:267 — Comment sheet opened
+2026-08-17 17:39:09 [INFO    ] base_page.py:209 — Entered text 'Awesome 🔥' into ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:10 [INFO    ] base_page.py:287 — Keyboard hidden.
+2026-08-17 17:39:11 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivSend' or (@content-desc='Send' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:12 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivClose' or (@content-desc='Close' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:12 [INFO    ] feed_page.py:392 — Comment added
+2026-08-17 17:39:12 [INFO    ] base_page.py:277 — Element ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]") disappeared.
+2026-08-17 17:39:12 [INFO    ] test_feed.py:172 — TEST PASSED: Add comment variant — 'Awesome 🔥'
+2026-08-17 17:39:12 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:39:12 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:39:12 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:39:12 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:39:12 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:39:12 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:39:12 [INFO    ] feed_page.py:363 — Adding comment: Nice ❤️
+2026-08-17 17:39:12 [INFO    ] feed_page.py:253 — Opening comment sheet
+2026-08-17 17:39:13 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(1)')
+2026-08-17 17:39:14 [INFO    ] feed_page.py:267 — Comment sheet opened
+2026-08-17 17:39:15 [INFO    ] base_page.py:209 — Entered text 'Nice ❤️' into ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:16 [INFO    ] base_page.py:287 — Keyboard hidden.
+2026-08-17 17:39:17 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivSend' or (@content-desc='Send' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:20 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivClose' or (@content-desc='Close' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:20 [INFO    ] feed_page.py:392 — Comment added
+2026-08-17 17:39:20 [INFO    ] base_page.py:277 — Element ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]") disappeared.
+2026-08-17 17:39:20 [INFO    ] test_feed.py:172 — TEST PASSED: Add comment variant — 'Nice ❤️'
+2026-08-17 17:39:20 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:39:20 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:39:20 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:39:20 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:39:20 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:39:20 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:39:20 [INFO    ] feed_page.py:363 — Adding comment: Amazing 😍
+2026-08-17 17:39:20 [INFO    ] feed_page.py:253 — Opening comment sheet
+2026-08-17 17:39:21 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(1)')
+2026-08-17 17:39:23 [INFO    ] feed_page.py:267 — Comment sheet opened
+2026-08-17 17:39:24 [INFO    ] base_page.py:209 — Entered text 'Amazing 😍' into ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:25 [INFO    ] base_page.py:287 — Keyboard hidden.
+2026-08-17 17:39:26 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivSend' or (@content-desc='Send' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:29 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivClose' or (@content-desc='Close' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:29 [INFO    ] feed_page.py:392 — Comment added
+2026-08-17 17:39:30 [INFO    ] base_page.py:277 — Element ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]") disappeared.
+2026-08-17 17:39:30 [INFO    ] test_feed.py:172 — TEST PASSED: Add comment variant — 'Amazing 😍'
+2026-08-17 17:39:30 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:39:30 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:39:30 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:39:30 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:39:30 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:39:30 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:39:30 [INFO    ] feed_page.py:363 — Adding comment: Superb 🔥
+2026-08-17 17:39:30 [INFO    ] feed_page.py:253 — Opening comment sheet
+2026-08-17 17:39:32 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(1)')
+2026-08-17 17:39:32 [INFO    ] feed_page.py:267 — Comment sheet opened
+2026-08-17 17:39:33 [INFO    ] base_page.py:209 — Entered text 'Superb 🔥' into ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:33 [INFO    ] base_page.py:287 — Keyboard hidden.
+2026-08-17 17:39:34 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivSend' or (@content-desc='Send' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:37 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivClose' or (@content-desc='Close' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:37 [INFO    ] feed_page.py:392 — Comment added
+2026-08-17 17:39:37 [INFO    ] base_page.py:277 — Element ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]") disappeared.
+2026-08-17 17:39:37 [INFO    ] test_feed.py:172 — TEST PASSED: Add comment variant — 'Superb 🔥'
+2026-08-17 17:39:37 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:39:37 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:39:37 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:39:37 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:39:37 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:39:37 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:39:37 [INFO    ] feed_page.py:363 — Adding comment: Cool Video 😎
+2026-08-17 17:39:37 [INFO    ] feed_page.py:253 — Opening comment sheet
+2026-08-17 17:39:38 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(1)')
+2026-08-17 17:39:39 [INFO    ] feed_page.py:267 — Comment sheet opened
+2026-08-17 17:39:40 [INFO    ] base_page.py:209 — Entered text 'Cool Video 😎' into ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:40 [INFO    ] base_page.py:287 — Keyboard hidden.
+2026-08-17 17:39:41 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivSend' or (@content-desc='Send' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:44 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivClose' or (@content-desc='Close' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:44 [INFO    ] feed_page.py:392 — Comment added
+2026-08-17 17:39:44 [INFO    ] base_page.py:277 — Element ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]") disappeared.
+2026-08-17 17:39:44 [INFO    ] test_feed.py:172 — TEST PASSED: Add comment variant — 'Cool Video 😎'
+2026-08-17 17:39:44 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:39:44 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:39:44 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:39:44 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:39:44 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:39:44 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:39:44 [INFO    ] feed_page.py:363 — Adding comment: Great Reel 🚀
+2026-08-17 17:39:44 [INFO    ] feed_page.py:253 — Opening comment sheet
+2026-08-17 17:39:45 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(1)')
+2026-08-17 17:39:47 [INFO    ] feed_page.py:267 — Comment sheet opened
+2026-08-17 17:39:48 [INFO    ] base_page.py:209 — Entered text 'Great Reel 🚀' into ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:48 [INFO    ] base_page.py:287 — Keyboard hidden.
+2026-08-17 17:39:50 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivSend' or (@content-desc='Send' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:51 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivClose' or (@content-desc='Close' and @package='com.zee5.hipi')]")
+2026-08-17 17:39:51 [INFO    ] feed_page.py:392 — Comment added
+2026-08-17 17:39:52 [INFO    ] base_page.py:277 — Element ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]") disappeared.
+2026-08-17 17:39:52 [INFO    ] test_feed.py:172 — TEST PASSED: Add comment variant — 'Great Reel 🚀'
+2026-08-17 17:39:52 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:39:52 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:39:52 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:39:53 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:39:53 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:39:53 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:39:53 [INFO    ] feed_page.py:473 — Saving current video
+2026-08-17 17:39:54 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(3)')
+2026-08-17 17:39:54 [INFO    ] feed_page.py:483 — Video saved
+2026-08-17 17:39:54 [INFO    ] test_feed.py:190 — TEST PASSED: Save video
+2026-08-17 17:39:54 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:39:54 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:39:54 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:39:54 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:39:54 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:39:54 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:39:54 [INFO    ] feed_page.py:416 — Sharing current video
+2026-08-17 17:39:56 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(2)')
+2026-08-17 17:40:00 [INFO    ] base_page.py:295 — Pressed back button.
+2026-08-17 17:40:03 [INFO    ] feed_page.py:449 — Share sheet dismissed
+2026-08-17 17:40:03 [INFO    ] test_feed.py:223 — TEST PASSED: Share video
+2026-08-17 17:40:03 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:40:03 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:40:03 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:40:03 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:40:03 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:40:03 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:40:03 [INFO    ] test_feed.py:240 — Pre-test follow state: Following
+2026-08-17 17:40:03 [INFO    ] feed_page.py:518 — Following current user
+2026-08-17 17:40:03 [INFO    ] feed_page.py:529 — User already followed - skipping
+2026-08-17 17:40:03 [INFO    ] test_feed.py:252 — TEST PASSED: Follow user
+2026-08-17 17:40:04 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:40:04 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:40:04 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:40:04 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:40:04 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:40:04 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:40:04 [INFO    ] feed_page.py:600 — Toggling mute on current video
+2026-08-17 17:40:05 [INFO    ] base_page.py:173 — Clicked: ('xpath', '(//android.widget.Button)[last()-1]')
+2026-08-17 17:40:09 [ERROR   ] base_page.py:106 — Element not visible after 2s: ('xpath', "//*[@package='com.zee5.hipi' and (contains(@text,'Report') or contains(@text,'Not interested') or contains(@text,'Not Interested') or contains(@text,'Cancel') or contains(@text,'Hide') or contains(@text,'Block') or contains(@text,'Spam'))]")
+2026-08-17 17:40:11 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible______package=_com.zee5.hipi_ and (contains(_text,_Report_) or contains(_text,_Not interested_) or contains(_text,_Not Interested_) or contains(_text,_Cancel_) or contains(_text,_Hide_) or contains(_text,_Block_) or contains(_text,_Spam_))__20260817_174009.png
+2026-08-17 17:40:11 [ERROR   ] screenshot_utils.py:87 — Page source save failed: [Errno 63] File name too long: 'reports/screenshots/element_not_visible______package=_com.zee5.hipi_ and (contains(_text,_Report_) or contains(_text,_Not interested_) or contains(_text,_Not Interested_) or contains(_text,_Cancel_) or contains(_text,_Hide_) or contains(_text,_Block_) or contains(_text,_Spam_))__20260817_174011.xml'
+2026-08-17 17:40:14 [ERROR   ] base_page.py:106 — Element not visible after 2s: ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]")
+2026-08-17 17:40:15 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible______resource-id=_com.zee5.hipi_id_etComment_ or (_class=_android.widget.EditText_ and _package=_com.zee5.hipi_)__20260817_174014.png
+2026-08-17 17:40:15 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_visible______resource-id=_com.zee5.hipi_id_etComment_ or (_class=_android.widget.EditText_ and _package=_com.zee5.hipi_)__20260817_174015.xml
+2026-08-17 17:40:16 [INFO    ] feed_page.py:643 — Mute toggled (verified: correct element, no known wrong-button sheet opened, feed still visible)
+2026-08-17 17:40:16 [INFO    ] test_feed.py:279 — TEST PASSED: Mute video
+2026-08-17 17:40:16 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:40:16 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:40:16 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:40:16 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:40:16 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:40:16 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:40:16 [INFO    ] feed_page.py:600 — Toggling mute on current video
+2026-08-17 17:40:16 [INFO    ] base_page.py:173 — Clicked: ('xpath', '(//android.widget.Button)[last()-1]')
+2026-08-17 17:40:20 [ERROR   ] base_page.py:106 — Element not visible after 2s: ('xpath', "//*[@package='com.zee5.hipi' and (contains(@text,'Report') or contains(@text,'Not interested') or contains(@text,'Not Interested') or contains(@text,'Cancel') or contains(@text,'Hide') or contains(@text,'Block') or contains(@text,'Spam'))]")
+2026-08-17 17:40:21 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible______package=_com.zee5.hipi_ and (contains(_text,_Report_) or contains(_text,_Not interested_) or contains(_text,_Not Interested_) or contains(_text,_Cancel_) or contains(_text,_Hide_) or contains(_text,_Block_) or contains(_text,_Spam_))__20260817_174020.png
+2026-08-17 17:40:21 [ERROR   ] screenshot_utils.py:87 — Page source save failed: [Errno 63] File name too long: 'reports/screenshots/element_not_visible______package=_com.zee5.hipi_ and (contains(_text,_Report_) or contains(_text,_Not interested_) or contains(_text,_Not Interested_) or contains(_text,_Cancel_) or contains(_text,_Hide_) or contains(_text,_Block_) or contains(_text,_Spam_))__20260817_174021.xml'
+2026-08-17 17:40:23 [ERROR   ] base_page.py:106 — Element not visible after 2s: ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]")
+2026-08-17 17:40:24 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible______resource-id=_com.zee5.hipi_id_etComment_ or (_class=_android.widget.EditText_ and _package=_com.zee5.hipi_)__20260817_174023.png
+2026-08-17 17:40:24 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_visible______resource-id=_com.zee5.hipi_id_etComment_ or (_class=_android.widget.EditText_ and _package=_com.zee5.hipi_)__20260817_174024.xml
+2026-08-17 17:40:24 [INFO    ] feed_page.py:643 — Mute toggled (verified: correct element, no known wrong-button sheet opened, feed still visible)
+2026-08-17 17:40:25 [INFO    ] feed_page.py:600 — Toggling mute on current video
+2026-08-17 17:40:26 [INFO    ] base_page.py:173 — Clicked: ('xpath', '(//android.widget.Button)[last()-1]')
+2026-08-17 17:40:29 [ERROR   ] base_page.py:106 — Element not visible after 2s: ('xpath', "//*[@package='com.zee5.hipi' and (contains(@text,'Report') or contains(@text,'Not interested') or contains(@text,'Not Interested') or contains(@text,'Cancel') or contains(@text,'Hide') or contains(@text,'Block') or contains(@text,'Spam'))]")
+2026-08-17 17:40:30 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible______package=_com.zee5.hipi_ and (contains(_text,_Report_) or contains(_text,_Not interested_) or contains(_text,_Not Interested_) or contains(_text,_Cancel_) or contains(_text,_Hide_) or contains(_text,_Block_) or contains(_text,_Spam_))__20260817_174029.png
+2026-08-17 17:40:30 [ERROR   ] screenshot_utils.py:87 — Page source save failed: [Errno 63] File name too long: 'reports/screenshots/element_not_visible______package=_com.zee5.hipi_ and (contains(_text,_Report_) or contains(_text,_Not interested_) or contains(_text,_Not Interested_) or contains(_text,_Cancel_) or contains(_text,_Hide_) or contains(_text,_Block_) or contains(_text,_Spam_))__20260817_174030.xml'
+2026-08-17 17:40:32 [ERROR   ] base_page.py:106 — Element not visible after 2s: ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]")
+2026-08-17 17:40:33 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible______resource-id=_com.zee5.hipi_id_etComment_ or (_class=_android.widget.EditText_ and _package=_com.zee5.hipi_)__20260817_174032.png
+2026-08-17 17:40:33 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_visible______resource-id=_com.zee5.hipi_id_etComment_ or (_class=_android.widget.EditText_ and _package=_com.zee5.hipi_)__20260817_174033.xml
+2026-08-17 17:40:33 [INFO    ] feed_page.py:643 — Mute toggled (verified: correct element, no known wrong-button sheet opened, feed still visible)
+2026-08-17 17:40:33 [INFO    ] test_feed.py:302 — TEST PASSED: Mute/unmute toggle
+2026-08-17 17:40:33 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:40:33 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:40:33 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:40:33 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:40:33 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:40:33 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:40:33 [INFO    ] feed_page.py:668 — Pausing current reel
+2026-08-17 17:40:33 [INFO    ] gestures.py:29 — Tap performed at X:432 Y:960
+2026-08-17 17:40:33 [INFO    ] feed_page.py:683 — Reel paused (coordinate tap on video area)
+2026-08-17 17:40:33 [INFO    ] test_feed.py:325 — TEST PASSED: Pause reel
+2026-08-17 17:40:33 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:40:33 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:40:33 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:40:34 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:40:34 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:40:34 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:40:34 [INFO    ] feed_page.py:668 — Pausing current reel
+2026-08-17 17:40:34 [INFO    ] gestures.py:29 — Tap performed at X:432 Y:960
+2026-08-17 17:40:34 [INFO    ] feed_page.py:683 — Reel paused (coordinate tap on video area)
+2026-08-17 17:40:37 [INFO    ] feed_page.py:707 — Resuming current reel
+2026-08-17 17:40:37 [INFO    ] gestures.py:29 — Tap performed at X:432 Y:960
+2026-08-17 17:40:37 [INFO    ] feed_page.py:717 — Reel resumed (coordinate tap on video area)
+2026-08-17 17:40:37 [INFO    ] test_feed.py:356 — TEST PASSED: Pause and resume reel
+2026-08-17 17:40:37 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:40:37 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:40:37 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:40:37 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:40:37 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:40:37 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:40:37 [INFO    ] feed_page.py:913 — Swiping to next video
+2026-08-17 17:40:40 [INFO    ] gestures.py:102 — Swipe up performed
+2026-08-17 17:40:41 [INFO    ] base_page.py:318 — Page source changed.
+2026-08-17 17:40:42 [INFO    ] feed_page.py:934 — Swiped to next video
+2026-08-17 17:40:42 [INFO    ] test_feed.py:393 — TEST PASSED: Swipe to next video
+2026-08-17 17:40:42 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:40:42 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:40:42 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:40:42 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:40:42 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:40:42 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:40:42 [INFO    ] feed_page.py:913 — Swiping to next video
+2026-08-17 17:40:46 [INFO    ] gestures.py:102 — Swipe up performed
+2026-08-17 17:40:47 [INFO    ] base_page.py:318 — Page source changed.
+2026-08-17 17:40:47 [INFO    ] feed_page.py:934 — Swiped to next video
+2026-08-17 17:40:50 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/test_swipe_multiple_reels_20260817_174049.png
+2026-08-17 17:40:50 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/test_swipe_multiple_reels_20260817_174050.xml
+2026-08-17 17:40:50 [ERROR   ] conftest.py:468 — Test FAILED: test_swipe_multiple_reels
+2026-08-17 17:40:50 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:40:50 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:40:50 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:40:50 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:40:50 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:40:50 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:40:50 [INFO    ] feed_page.py:116 — Opening creator's profile
+2026-08-17 17:40:51 [INFO    ] gestures.py:29 — Tap performed at X:324 Y:1967
+2026-08-17 17:40:51 [INFO    ] base_page.py:318 — Page source changed.
+2026-08-17 17:40:51 [INFO    ] feed_page.py:147 — Creator profile opened (coordinate tap)
+2026-08-17 17:40:52 [INFO    ] test_feed.py:457 — TEST PASSED: Open creator profile
+2026-08-17 17:40:52 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:40:52 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:40:52 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:41:00 [ERROR   ] base_page.py:106 — Element not visible after 8s: ('id', 'com.zee5.hipi:id/exo_content_frame')
+2026-08-17 17:41:00 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible_com.zee5.hipi_id_exo_content_frame_20260817_174100.png
+2026-08-17 17:41:00 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_visible_com.zee5.hipi_id_exo_content_frame_20260817_174100.xml
+2026-08-17 17:41:00 [WARNING ] login_page.py:568 — Home page not displayed within timeout
+2026-08-17 17:41:00 [WARNING ] base_test.py:158 — Session-scoped driver is not on the home feed — logging in again.
+2026-08-17 17:41:00 [INFO    ] base_test.py:39 — Logging in as default test user.
+2026-08-17 17:41:00 [INFO    ] login_page.py:599 — ========== LOGIN FLOW START ==========
+2026-08-17 17:41:01 [INFO    ] login_page.py:43 — Opening profile tab
+2026-08-17 17:41:02 [INFO    ] login_page.py:53 — Profile tab open attempt 1/2
+2026-08-17 17:41:03 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-17 17:41:09 [ERROR   ] base_page.py:148 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-17 17:41:10 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260817_174109.png
+2026-08-17 17:41:10 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260817_174110.xml
+2026-08-17 17:41:10 [INFO    ] login_page.py:200 — Already logged in — 'Edit Profile' visible. noReset=true preserved a previous session. Navigating to home feed.
+2026-08-17 17:41:10 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Home']]")
+2026-08-17 17:41:10 [INFO    ] login_page.py:211 — Navigated to home tab.
+2026-08-17 17:41:10 [INFO    ] login_page.py:616 — ========== LOGIN SKIPPED (ALREADY LOGGED IN) ==========
+2026-08-17 17:41:10 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:41:11 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:41:11 [INFO    ] base_test.py:163 — login_and_reach_feed: COMPLETE
+2026-08-17 17:41:11 [INFO    ] feed_page.py:253 — Opening comment sheet
+2026-08-17 17:41:13 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(1)')
+2026-08-17 17:41:15 [INFO    ] feed_page.py:267 — Comment sheet opened
+2026-08-17 17:41:15 [INFO    ] feed_page.py:287 — Closing comment sheet
+2026-08-17 17:41:15 [INFO    ] base_page.py:287 — Keyboard hidden.
+2026-08-17 17:41:17 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivClose' or (@content-desc='Close' and @package='com.zee5.hipi')]")
+2026-08-17 17:41:17 [INFO    ] base_page.py:277 — Element ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]") disappeared.
+2026-08-17 17:41:17 [INFO    ] feed_page.py:318 — Comment sheet closed
+2026-08-17 17:41:17 [INFO    ] base_page.py:277 — Element ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]") disappeared.
+2026-08-17 17:41:17 [INFO    ] test_feed.py:497 — TEST PASSED: Open and close comment sheet
+2026-08-17 17:41:17 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:41:17 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:41:17 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:41:17 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:41:17 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:41:17 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:41:17 [INFO    ] feed_page.py:253 — Opening comment sheet
+2026-08-17 17:41:17 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(1)')
+2026-08-17 17:41:19 [INFO    ] feed_page.py:267 — Comment sheet opened
+2026-08-17 17:41:20 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]")
+2026-08-17 17:41:22 [INFO    ] feed_page.py:287 — Closing comment sheet
+2026-08-17 17:41:26 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivClose' or (@content-desc='Close' and @package='com.zee5.hipi')]")
+2026-08-17 17:41:26 [INFO    ] base_page.py:277 — Element ('xpath', "//*[@resource-id='com.zee5.hipi:id/etComment' or (@class='android.widget.EditText' and @package='com.zee5.hipi')]") disappeared.
+2026-08-17 17:41:26 [INFO    ] feed_page.py:318 — Comment sheet closed
+2026-08-17 17:41:26 [INFO    ] test_feed.py:529 — TEST PASSED: Comment input visible
+2026-08-17 17:41:26 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:41:26 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:41:26 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:41:26 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:41:26 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:41:26 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:41:26 [INFO    ] feed_page.py:741 — Opening three-dots menu
+2026-08-17 17:41:26 [INFO    ] base_page.py:173 — Clicked: ('xpath', '(//android.widget.Button)[last()]')
+2026-08-17 17:41:26 [INFO    ] base_page.py:318 — Page source changed.
+2026-08-17 17:41:26 [INFO    ] feed_page.py:772 — Three-dots menu opened (page source changed)
+2026-08-17 17:41:28 [INFO    ] feed_page.py:835 — Closing report popup via cross icon
+2026-08-17 17:41:31 [ERROR   ] base_page.py:106 — Element not visible after 3s: ('xpath', "//*[@resource-id='com.zee5.hipi:id/ivClose' or (@content-desc='Close' and @package='com.zee5.hipi')]")
+2026-08-17 17:41:32 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible______resource-id=_com.zee5.hipi_id_ivClose_ or (_content-desc=_Close_ and _package=_com.zee5.hipi_)__20260817_174131.png
+2026-08-17 17:41:32 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_visible______resource-id=_com.zee5.hipi_id_ivClose_ or (_content-desc=_Close_ and _package=_com.zee5.hipi_)__20260817_174132.xml
+2026-08-17 17:41:33 [INFO    ] base_page.py:295 — Pressed back button.
+2026-08-17 17:41:35 [INFO    ] feed_page.py:850 — Report popup closed (cross / back)
+2026-08-17 17:41:35 [INFO    ] base_page.py:277 — Element ('xpath', "//*[@package='com.zee5.hipi' and (contains(@text,'Report') or contains(@text,'Not interested') or contains(@text,'Not Interested') or contains(@text,'Cancel') or contains(@text,'Hide') or contains(@text,'Block') or contains(@text,'Spam'))]") disappeared.
+2026-08-17 17:41:35 [INFO    ] test_feed.py:575 — TEST PASSED: Three-dots menu close via cross
+2026-08-17 17:41:35 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:41:35 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:41:35 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:41:35 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:41:35 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:41:35 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:41:35 [INFO    ] feed_page.py:741 — Opening three-dots menu
+2026-08-17 17:41:36 [INFO    ] base_page.py:173 — Clicked: ('xpath', '(//android.widget.Button)[last()]')
+2026-08-17 17:41:36 [INFO    ] base_page.py:318 — Page source changed.
+2026-08-17 17:41:36 [INFO    ] feed_page.py:772 — Three-dots menu opened (page source changed)
+2026-08-17 17:41:37 [INFO    ] feed_page.py:874 — Closing report popup via cancel button
+2026-08-17 17:41:40 [ERROR   ] base_page.py:106 — Element not visible after 3s: ('xpath', "//*[@package='com.zee5.hipi' and contains(@text,'Cancel') and @clickable='true']")
+2026-08-17 17:41:41 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible______package=_com.zee5.hipi_ and contains(_text,_Cancel_) and _clickable=_true___20260817_174140.png
+2026-08-17 17:41:41 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_visible______package=_com.zee5.hipi_ and contains(_text,_Cancel_) and _clickable=_true___20260817_174141.xml
+2026-08-17 17:41:42 [INFO    ] base_page.py:295 — Pressed back button.
+2026-08-17 17:41:44 [INFO    ] feed_page.py:889 — Report popup closed (cancel / back)
+2026-08-17 17:41:44 [INFO    ] base_page.py:277 — Element ('xpath', "//*[@package='com.zee5.hipi' and (contains(@text,'Report') or contains(@text,'Not interested') or contains(@text,'Not Interested') or contains(@text,'Cancel') or contains(@text,'Hide') or contains(@text,'Block') or contains(@text,'Spam'))]") disappeared.
+2026-08-17 17:41:44 [INFO    ] test_feed.py:611 — TEST PASSED: Three-dots menu close via cancel
+2026-08-17 17:41:44 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:41:44 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:41:44 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:41:44 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:41:44 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:41:44 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:41:44 [INFO    ] feed_page.py:974 — Navigating to Home tab
+2026-08-17 17:41:45 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Home']]")
+2026-08-17 17:41:45 [INFO    ] feed_page.py:984 — Home tab tapped
+2026-08-17 17:41:45 [INFO    ] test_feed.py:642 — TEST PASSED: Navigate Home tab
+2026-08-17 17:41:45 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:41:45 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:41:45 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:41:45 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:41:45 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:41:45 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:41:45 [INFO    ] feed_page.py:1010 — Navigating to Discover tab
+2026-08-17 17:41:46 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Discover']]")
+2026-08-17 17:41:46 [INFO    ] base_page.py:318 — Page source changed.
+2026-08-17 17:41:46 [INFO    ] feed_page.py:1027 — Discover tab tapped
+2026-08-17 17:41:47 [INFO    ] test_feed.py:671 — TEST PASSED: Navigate Discover tab
+2026-08-17 17:41:47 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:41:47 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:41:47 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:41:55 [ERROR   ] base_page.py:106 — Element not visible after 8s: ('id', 'com.zee5.hipi:id/exo_content_frame')
+2026-08-17 17:41:55 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible_com.zee5.hipi_id_exo_content_frame_20260817_174155.png
+2026-08-17 17:41:55 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_visible_com.zee5.hipi_id_exo_content_frame_20260817_174155.xml
+2026-08-17 17:41:55 [WARNING ] login_page.py:568 — Home page not displayed within timeout
+2026-08-17 17:41:55 [WARNING ] base_test.py:158 — Session-scoped driver is not on the home feed — logging in again.
+2026-08-17 17:41:55 [INFO    ] base_test.py:39 — Logging in as default test user.
+2026-08-17 17:41:55 [INFO    ] login_page.py:599 — ========== LOGIN FLOW START ==========
+2026-08-17 17:41:56 [INFO    ] login_page.py:43 — Opening profile tab
+2026-08-17 17:41:57 [INFO    ] login_page.py:53 — Profile tab open attempt 1/2
+2026-08-17 17:41:58 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-17 17:42:04 [ERROR   ] base_page.py:148 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-17 17:42:05 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260817_174204.png
+2026-08-17 17:42:05 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260817_174205.xml
+2026-08-17 17:42:05 [INFO    ] login_page.py:200 — Already logged in — 'Edit Profile' visible. noReset=true preserved a previous session. Navigating to home feed.
+2026-08-17 17:42:05 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Home']]")
+2026-08-17 17:42:05 [INFO    ] login_page.py:211 — Navigated to home tab.
+2026-08-17 17:42:05 [INFO    ] login_page.py:616 — ========== LOGIN SKIPPED (ALREADY LOGGED IN) ==========
+2026-08-17 17:42:05 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:42:07 [WARNING ] base_page.py:255 — Error checking display status for ('id', 'com.zee5.hipi:id/exo_content_frame'): Message: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: Could not proxy command to the remote server. Original error: socket hang up
+    at ProxyRequestError.getActualError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:692:16)
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:270:27)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.doFindElementOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/find.js:24:13)
+    at async doFind (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:24:23)
+    at async wrappedCondFn (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:97:20)
+    at async spin (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:174:24)
+    at async waitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:192:12)
+    at async AndroidUiautomator2Driver.implicitWaitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:99:16)
+    at async AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:45:9)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-17 17:42:07 [WARNING ] login_page.py:568 — Home page not displayed within timeout
+2026-08-17 17:42:07 [ERROR   ] screenshot_utils.py:64 — Screenshot capture failed: Message: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+UnknownError: 'GET /screenshot' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:272:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getScreenshot (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/screenshot.js:72:19)
+2026-08-17 17:42:07 [ERROR   ] screenshot_utils.py:87 — Page source save failed: Message: 'GET /session/7c830817-29e2-459e-ba50-f5991363c205/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+Stacktrace:
+InvalidContextError: 'GET /session/7c830817-29e2-459e-ba50-f5991363c205/source' cannot be proxied to UiAutomator2 server because the instrumentation process is not running (probably crashed). Check the server log and/or the logcat output for more details
+    at UIA2Proxy.proxyCommand (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:32:19)
+    at UIA2Proxy.proxyReqRes (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:325:49)
+    at runCommandPromise (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:121:30)
+    at /opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:171:12
+    at AsyncLock._promiseTry (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:306:31)
+    at exec (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:170:9)
+    at AsyncLock.acquire (/opt/homebrew/lib/node_modules/appium/node_modules/async-lock/lib/index.js:189:3)
+    at AndroidUiautomator2Driver.executeCommand (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/driver.js:161:45)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async defaultBehavior (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:634:20)
+    at async AppiumDriver.executeWrappedCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:726:22)
+    at async AppiumDriver.executeCommand (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:645:21)
+    at async doJwpProxy (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:476:9)
+    at async asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:307:21)
+2026-08-17 17:42:07 [ERROR   ] conftest.py:468 — Test FAILED: test_continuous_feed_flow
+2026-08-17 17:42:07 [INFO    ] conftest.py:428 — LOGGED-IN DRIVER: closing session.
+2026-08-17 17:42:07 [INFO    ] conftest.py:482 — ==================================================
+2026-08-17 17:42:07 [INFO    ] conftest.py:483 — PYTEST SESSION END | Exit status: 1
+2026-08-17 17:42:07 [INFO    ] conftest.py:484 — ==================================================

@@ -1,0 +1,60 @@
+2026-08-17 13:30:06 [INFO    ] conftest.py:291 — ==================================================
+2026-08-17 13:30:06 [INFO    ] conftest.py:292 — DRIVER SETUP START
+2026-08-17 13:30:06 [INFO    ] conftest.py:293 — ==================================================
+2026-08-17 13:30:06 [INFO    ] conftest.py:158 — Driver creation attempt 1/3
+2026-08-17 13:30:08 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-17 13:30:08 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-17 13:30:08 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
+2026-08-17 13:30:08 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
+2026-08-17 13:30:08 [INFO    ] driver_factory.py:151 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-17 13:31:20 [ERROR   ] conftest.py:166 — Attempt 1 failed: Message: The instrumentation process cannot be initialized within 60000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability
+Stacktrace:
+UnknownError: The instrumentation process cannot be initialized within 60000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: The instrumentation process cannot be initialized within 60000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability
+    at Object.errorWithException (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/support/build/lib/logging.js:78:66)
+    at UiAutomator2Server.startSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/uiautomator2.js:167:36)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.performSessionExecution (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:424:9)
+    at async AndroidUiautomator2Driver.startUiAutomator2Session (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:482:9)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:249:28)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-17 13:31:20 [INFO    ] conftest.py:195 — Waiting 3s before retry...
+2026-08-17 13:31:23 [INFO    ] conftest.py:158 — Driver creation attempt 2/3
+2026-08-17 13:31:24 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-17 13:31:24 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-17 13:31:24 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
+2026-08-17 13:31:24 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
+2026-08-17 13:31:24 [INFO    ] driver_factory.py:151 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-17 13:31:34 [INFO    ] driver_factory.py:112 — App launched by driver. Waiting for stabilization...
+2026-08-17 13:31:36 [INFO    ] driver_factory.py:115 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-17 13:31:36 [INFO    ] conftest.py:302 — Driver created successfully.
+2026-08-17 13:31:39 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-17 13:31:43 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-17 13:31:43 [INFO    ] conftest.py:217 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-17 13:31:43 [INFO    ] conftest.py:315 — DRIVER SETUP COMPLETE
+2026-08-17 13:31:43 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-17 13:31:43 [INFO    ] base_test.py:58 — login_and_reach_feed: START
+2026-08-17 13:31:43 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-17 13:31:43 [INFO    ] login_page.py:591 — ========== LOGIN FLOW START ==========
+2026-08-17 13:31:44 [INFO    ] login_page.py:43 — Opening profile tab
+2026-08-17 13:31:45 [INFO    ] login_page.py:53 — Profile tab open attempt 1/2
+2026-08-17 13:31:48 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-17 13:31:55 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-17 13:31:55 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260817_133155.png
+2026-08-17 13:31:56 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260817_133155.xml
+2026-08-17 13:31:56 [INFO    ] login_page.py:200 — Already logged in — 'Edit Profile' visible. noReset=true preserved a previous session. Navigating to home feed.
+2026-08-17 13:31:56 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Home']]")
+2026-08-17 13:31:56 [INFO    ] login_page.py:211 — Navigated to home tab.
+2026-08-17 13:31:56 [INFO    ] login_page.py:608 — ========== LOGIN SKIPPED (ALREADY LOGGED IN) ==========
+2026-08-17 13:31:56 [INFO    ] login_page.py:548 — Validating home page
+2026-08-17 13:31:59 [INFO    ] login_page.py:558 — Home page displayed (exo_content_frame visible)
+2026-08-17 13:31:59 [INFO    ] base_test.py:63 — login_and_reach_feed: COMPLETE
+2026-08-17 13:31:59 [INFO    ] feed_page.py:923 — Navigating to Discover tab
+2026-08-17 13:32:03 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Discover']]")
+2026-08-17 13:32:06 [INFO    ] base_page.py:235 — Page source changed.
+2026-08-17 13:32:06 [INFO    ] feed_page.py:940 — Discover tab tapped
+2026-08-17 13:32:09 [INFO    ] test_feed.py:671 — TEST PASSED: Navigate Discover tab
+2026-08-17 13:32:09 [INFO    ] conftest.py:326 — Closing driver session.

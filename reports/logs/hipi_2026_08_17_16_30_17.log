@@ -1,0 +1,51 @@
+2026-08-17 16:30:30 [ERROR   ] base_page.py:50 — Element not visible after 5s: ('id', 'com.zee5.hipi:id/exo_content_frame')
+2026-08-17 16:30:31 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible_com.zee5.hipi_id_exo_content_frame_20260817_163030.png
+2026-08-17 16:30:31 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_visible_com.zee5.hipi_id_exo_content_frame_20260817_163031.xml
+2026-08-17 16:30:31 [INFO    ] feed_page.py:572 — Toggling mute on current video
+2026-08-17 16:30:42 [ERROR   ] base_page.py:59 — Element not clickable after 10s: ('xpath', '(//android.widget.Button)[last()-1]')
+2026-08-17 16:30:43 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_clickable_(__android.widget.Button)_last()-1__20260817_163042.png
+2026-08-17 16:30:43 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_clickable_(__android.widget.Button)_last()-1__20260817_163043.xml
+2026-08-17 16:30:43 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('xpath', '(//android.widget.Button)[last()-1]'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-17 16:30:43 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-17 16:30:46 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-17 16:30:56 [ERROR   ] base_page.py:59 — Element not clickable after 10s: ('xpath', '(//android.widget.Button)[last()-1]')
+2026-08-17 16:30:57 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_clickable_(__android.widget.Button)_last()-1__20260817_163056.png
+2026-08-17 16:30:57 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_clickable_(__android.widget.Button)_last()-1__20260817_163057.xml
+2026-08-17 16:30:57 [ERROR   ] base_page.py:118 — Click failed on attempt 2 for ('xpath', '(//android.widget.Button)[last()-1]'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-17 16:30:57 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-17 16:31:00 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-17 16:31:11 [ERROR   ] base_page.py:59 — Element not clickable after 10s: ('xpath', '(//android.widget.Button)[last()-1]')
+2026-08-17 16:31:11 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_clickable_(__android.widget.Button)_last()-1__20260817_163111.png
+2026-08-17 16:31:11 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_clickable_(__android.widget.Button)_last()-1__20260817_163111.xml
+2026-08-17 16:31:11 [ERROR   ] base_page.py:118 — Click failed on attempt 3 for ('xpath', '(//android.widget.Button)[last()-1]'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-17 16:31:11 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-17 16:31:14 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-17 16:31:15 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/click_failed_20260817_163114.png
+2026-08-17 16:31:15 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/click_failed_20260817_163115.xml
+2026-08-17 16:31:15 [ERROR   ] feed_page.py:628 — Mute toggle failed: Unable to click ('xpath', '(//android.widget.Button)[last()-1]') after 3 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-17 16:31:16 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/mute_toggle_failed_20260817_163115.png
+2026-08-17 16:31:16 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/mute_toggle_failed_20260817_163116.xml

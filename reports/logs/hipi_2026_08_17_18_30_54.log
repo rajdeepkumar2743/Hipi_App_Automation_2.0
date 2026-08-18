@@ -1,0 +1,79 @@
+2026-08-17 18:30:54 [INFO    ] conftest.py:610 — ==================================================
+2026-08-17 18:30:54 [INFO    ] conftest.py:611 — PYTEST SESSION START
+2026-08-17 18:30:54 [INFO    ] conftest.py:612 — ==================================================
+2026-08-17 18:30:54 [INFO    ] conftest.py:298 — ==================================================
+2026-08-17 18:30:54 [INFO    ] conftest.py:299 — SUITE START: resetting and relaunching com.zee5.hipi on 'emulator' (emulator-5554) for a clean run...
+2026-08-17 18:30:54 [INFO    ] conftest.py:301 — ==================================================
+2026-08-17 18:30:54 [WARNING ] conftest.py:231 — 'pm clear' did not report Success: 'adb: device offline\n'
+2026-08-17 18:30:54 [WARNING ] conftest.py:312 — SUITE START: reset-and-relaunch did not fully succeed (cleared=False, relaunched=False) — continuing anyway; the first test's driver fixture will still attempt to launch the app normally. This is logged, not fatal, so a device/adb hiccup at suite start doesn't block the whole run over what the per-test driver retry logic can likely recover from anyway.
+2026-08-17 18:30:54 [INFO    ] conftest.py:549 — LOGGED-IN DRIVER: creating shared feed session...
+2026-08-17 18:30:54 [INFO    ] conftest.py:158 — Driver creation attempt 1/3
+2026-08-17 18:31:10 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-17 18:31:10 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-17 18:31:10 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
+2026-08-17 18:31:10 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
+2026-08-17 18:31:10 [INFO    ] driver_factory.py:151 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-17 18:31:30 [ERROR   ] conftest.py:166 — Attempt 1 failed: Message: Could not find a connected Android device in 20000ms
+Stacktrace:
+UnknownError: Could not find a connected Android device in 20000ms
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Could not find a connected Android device in 20000ms
+    at ADB.getDevicesWithRetry (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/system-calls.js:360:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getDeviceInfoFromCaps (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/device/common.js:76:25)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:211:38)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-17 18:31:30 [INFO    ] conftest.py:179 — Emulator appears offline — restarting ADB server...
+2026-08-17 18:31:39 [INFO    ] conftest.py:195 — Waiting 3s before retry...
+2026-08-17 18:31:42 [INFO    ] conftest.py:158 — Driver creation attempt 2/3
+2026-08-17 18:31:57 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-17 18:31:57 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-17 18:31:57 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
+2026-08-17 18:31:57 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
+2026-08-17 18:31:57 [INFO    ] driver_factory.py:151 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-17 18:32:17 [ERROR   ] conftest.py:166 — Attempt 2 failed: Message: Could not find a connected Android device in 20000ms
+Stacktrace:
+UnknownError: Could not find a connected Android device in 20000ms
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Could not find a connected Android device in 20000ms
+    at ADB.getDevicesWithRetry (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/system-calls.js:360:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getDeviceInfoFromCaps (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/device/common.js:76:25)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:211:38)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-17 18:32:17 [INFO    ] conftest.py:179 — Emulator appears offline — restarting ADB server...
+2026-08-17 18:32:28 [INFO    ] conftest.py:195 — Waiting 3s before retry...
+2026-08-17 18:32:31 [INFO    ] conftest.py:158 — Driver creation attempt 3/3
+2026-08-17 18:32:46 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-17 18:32:46 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-17 18:32:46 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
+2026-08-17 18:32:46 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
+2026-08-17 18:32:46 [INFO    ] driver_factory.py:151 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-17 18:33:06 [ERROR   ] conftest.py:166 — Attempt 3 failed: Message: Could not find a connected Android device in 20000ms
+Stacktrace:
+UnknownError: Could not find a connected Android device in 20000ms
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Could not find a connected Android device in 20000ms
+    at ADB.getDevicesWithRetry (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/system-calls.js:360:19)
+    at async AndroidUiautomator2Driver.getDeviceInfoFromCaps (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/device/common.js:76:25)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:211:38)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-17 18:33:06 [ERROR   ] conftest.py:555 — logged_in_driver setup failed: Driver creation failed after 3 attempts: Message: Could not find a connected Android device in 20000ms
+Stacktrace:
+UnknownError: Could not find a connected Android device in 20000ms
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Could not find a connected Android device in 20000ms
+    at ADB.getDevicesWithRetry (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/system-calls.js:360:19)
+    at async AndroidUiautomator2Driver.getDeviceInfoFromCaps (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/device/common.js:76:25)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:211:38)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-17 18:33:06 [INFO    ] conftest.py:549 — LOGGED-IN DRIVER: creating shared feed session...
+2026-08-17 18:33:06 [INFO    ] conftest.py:158 — Driver creation attempt 1/3

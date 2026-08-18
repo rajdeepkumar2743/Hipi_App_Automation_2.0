@@ -1,0 +1,126 @@
+2026-08-17 14:45:59 [INFO    ] conftest.py:291 — ==================================================
+2026-08-17 14:45:59 [INFO    ] conftest.py:292 — DRIVER SETUP START
+2026-08-17 14:45:59 [INFO    ] conftest.py:293 — ==================================================
+2026-08-17 14:45:59 [INFO    ] conftest.py:158 — Driver creation attempt 1/3
+2026-08-17 14:46:01 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-17 14:46:01 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-17 14:46:01 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
+2026-08-17 14:46:01 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
+2026-08-17 14:46:01 [INFO    ] driver_factory.py:151 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-17 14:46:05 [INFO    ] driver_factory.py:112 — App launched by driver. Waiting for stabilization...
+2026-08-17 14:46:07 [INFO    ] driver_factory.py:115 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-17 14:46:07 [INFO    ] conftest.py:302 — Driver created successfully.
+2026-08-17 14:46:10 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-17 14:46:13 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-17 14:46:13 [INFO    ] conftest.py:217 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-17 14:46:13 [INFO    ] conftest.py:315 — DRIVER SETUP COMPLETE
+2026-08-17 14:46:13 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-17 14:46:13 [INFO    ] base_test.py:58 — login_and_reach_feed: START
+2026-08-17 14:46:13 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-17 14:46:13 [INFO    ] login_page.py:591 — ========== LOGIN FLOW START ==========
+2026-08-17 14:46:14 [INFO    ] login_page.py:43 — Opening profile tab
+2026-08-17 14:46:15 [INFO    ] login_page.py:53 — Profile tab open attempt 1/2
+2026-08-17 14:46:24 [ERROR   ] base_page.py:59 — Element not clickable after 8s: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-17 14:46:24 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_clickable___android.view.View__clickable=_true___.__android.widget.TextView__text=_Profile____20260817_144624.png
+2026-08-17 14:46:25 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_clickable___android.view.View__clickable=_true___.__android.widget.TextView__text=_Profile____20260817_144624.xml
+2026-08-17 14:46:25 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]"): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-17 14:46:25 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-17 14:46:28 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-17 14:46:28 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/click_failed_20260817_144628.png
+2026-08-17 14:46:29 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/click_failed_20260817_144628.xml
+2026-08-17 14:46:29 [WARNING ] login_page.py:98 — Element-based click failed: Unable to click ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]") after 1 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-17 14:46:37 [ERROR   ] base_page.py:50 — Element not visible after 8s: ('-android uiautomator', 'new UiSelector().text("Edit Profile")')
+2026-08-17 14:46:37 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible_new UiSelector().text(_Edit Profile_)_20260817_144637.png
+2026-08-17 14:46:37 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_visible_new UiSelector().text(_Edit Profile_)_20260817_144637.xml
+2026-08-17 14:46:41 [ERROR   ] base_page.py:50 — Element not visible after 3s: ('id', 'com.zee5.hipi:id/exo_content_frame')
+2026-08-17 14:46:43 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible_com.zee5.hipi_id_exo_content_frame_20260817_144641.png
+2026-08-17 14:46:45 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_visible_com.zee5.hipi_id_exo_content_frame_20260817_144643.xml
+2026-08-17 14:46:45 [INFO    ] gestures.py:29 — Tap performed at X:760 Y:2246
+2026-08-17 14:46:46 [INFO    ] base_page.py:84 — wait_for_any_visible matched: ('class name', 'android.widget.EditText')
+2026-08-17 14:46:46 [INFO    ] login_page.py:147 — Profile tab opened (coordinate tap, verified)
+2026-08-17 14:46:52 [ERROR   ] base_page.py:50 — Element not visible after 5s: ('-android uiautomator', 'new UiSelector().textContains("Continue")')
+2026-08-17 14:46:52 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_visible_new UiSelector().textContains(_Continue_)_20260817_144652.png
+2026-08-17 14:46:52 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_visible_new UiSelector().textContains(_Continue_)_20260817_144652.xml
+2026-08-17 14:46:52 [INFO    ] login_page.py:276 — Entering mobile number: 9876543210
+2026-08-17 14:46:53 [INFO    ] base_page.py:136 — Entered text '9876543210' into ('class name', 'android.widget.EditText')
+2026-08-17 14:46:55 [INFO    ] login_page.py:290 — Mobile number entered
+2026-08-17 14:46:55 [INFO    ] login_page.py:315 — Clicking proceed button
+2026-08-17 15:01:59 [ERROR   ] base_page.py:118 — Click failed on attempt 1 for ('accessibility id', 'Proceed'): Message: Could not proxy command to the remote server. Original error: timeout of 240000ms exceeded
+Stacktrace:
+UnknownError: Could not proxy command to the remote server. Original error: timeout of 240000ms exceeded
+    at ProxyRequestError.getActualError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:692:16)
+    at UIA2Proxy.command (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/jsonwp-proxy/proxy.js:270:27)
+    at processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at runNextTicks (node:internal/process/task_queues:69:3)
+    at process.processTimers (node:internal/timers:538:9)
+    at async AndroidUiautomator2Driver.doFindElementOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/commands/find.js:24:13)
+    at async doFind (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:24:23)
+    at async wrappedCondFn (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:97:20)
+    at async spin (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:174:24)
+    at async waitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/asyncbox/build/lib/asyncbox.js:192:12)
+    at async AndroidUiautomator2Driver.implicitWaitForCondition (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/timeout.js:99:16)
+    at async AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:45:9)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-17 15:01:59 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-17 15:02:02 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-17 15:02:12 [ERROR   ] base_page.py:59 — Element not clickable after 10s: ('accessibility id', 'Proceed')
+2026-08-17 15:02:13 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_clickable_Proceed_20260817_150212.png
+2026-08-17 15:02:13 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_clickable_Proceed_20260817_150213.xml
+2026-08-17 15:02:13 [ERROR   ] base_page.py:118 — Click failed on attempt 2 for ('accessibility id', 'Proceed'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-17 15:02:13 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-17 15:02:16 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-17 15:02:38 [ERROR   ] base_page.py:59 — Element not clickable after 10s: ('accessibility id', 'Proceed')
+2026-08-17 15:02:39 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/element_not_clickable_Proceed_20260817_150238.png
+2026-08-17 15:02:40 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/element_not_clickable_Proceed_20260817_150239.xml
+2026-08-17 15:02:40 [ERROR   ] base_page.py:118 — Click failed on attempt 3 for ('accessibility id', 'Proceed'): Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-17 15:02:40 [WARNING ] base_page.py:262 — Attempting to recover application state...
+2026-08-17 15:02:43 [INFO    ] base_page.py:266 — App recovery attempt completed.
+2026-08-17 15:02:43 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/click_failed_20260817_150243.png
+2026-08-17 15:02:43 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/click_failed_20260817_150243.xml
+2026-08-17 15:02:43 [ERROR   ] login_page.py:333 — Proceed button failed: Unable to click ('accessibility id', 'Proceed') after 3 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-17 15:02:44 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/proceed_button_failed_20260817_150243.png
+2026-08-17 15:02:44 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/proceed_button_failed_20260817_150244.xml
+2026-08-17 15:02:44 [ERROR   ] login_page.py:725 — Login flow failed: Unable to click ('accessibility id', 'Proceed') after 3 retries. Last exception: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-17 15:02:44 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/login_failed_20260817_150244.png
+2026-08-17 15:02:44 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/login_failed_20260817_150244.xml
+2026-08-17 15:02:45 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/test_open_and_close_comment_sheet_20260817_150244.png
+2026-08-17 15:02:45 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/test_open_and_close_comment_sheet_20260817_150245.xml
+2026-08-17 15:02:45 [ERROR   ] conftest.py:419 — Test FAILED: test_open_and_close_comment_sheet
+2026-08-17 15:02:45 [INFO    ] conftest.py:326 — Closing driver session.

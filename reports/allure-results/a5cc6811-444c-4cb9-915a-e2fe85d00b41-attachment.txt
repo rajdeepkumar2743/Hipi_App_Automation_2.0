@@ -1,0 +1,55 @@
+2026-08-18 13:41:20 [INFO    ] conftest.py:411 — ==================================================
+2026-08-18 13:41:20 [INFO    ] conftest.py:412 — DRIVER SETUP START
+2026-08-18 13:41:20 [INFO    ] conftest.py:413 — ==================================================
+2026-08-18 13:41:20 [INFO    ] conftest.py:429 — Test 'test_login_with_multiple_users[9876543210-1111-invalid_otp]' is marked requires_logout — clearing app data before session start.
+2026-08-18 13:41:21 [INFO    ] conftest.py:229 — Cleared app data for com.zee5.hipi (logged-out state guaranteed).
+2026-08-18 13:41:21 [INFO    ] conftest.py:158 — Driver creation attempt 1/3
+2026-08-18 13:41:22 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-18 13:41:22 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-18 13:41:22 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
+2026-08-18 13:41:22 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
+2026-08-18 13:41:22 [INFO    ] driver_factory.py:151 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-18 13:41:26 [INFO    ] driver_factory.py:112 — App launched by driver. Waiting for stabilization...
+2026-08-18 13:41:28 [INFO    ] driver_factory.py:115 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-18 13:41:28 [INFO    ] conftest.py:436 — Driver created successfully.
+2026-08-18 13:41:32 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-18 13:41:35 [INFO    ] popup_handler.py:130 — 'Get Started' screen dismissed.
+2026-08-18 13:41:38 [WARNING ] conftest.py:341 — App readiness probe: unexpected package 'com.google.android.permissioncontroller' (expected 'com.zee5.hipi').
+2026-08-18 13:41:38 [INFO    ] conftest.py:449 — DRIVER SETUP COMPLETE
+2026-08-18 13:41:38 [INFO    ] base_test.py:29 — BaseTest setup completed.
+2026-08-18 13:41:38 [INFO    ] test_login.py:70 — ========== LOGIN TEST START ==========
+2026-08-18 13:41:38 [INFO    ] test_login.py:74 — TEST TYPE: invalid_otp
+2026-08-18 13:41:38 [INFO    ] login_page.py:599 — ========== LOGIN FLOW START ==========
+2026-08-18 13:41:38 [WARNING ] base_page.py:353 — System dialog in foreground (com.google.android.permissioncontroller) — clearing it.
+2026-08-18 13:41:38 [INFO    ] base_page.py:398 — Cleared system dialog via ('id', 'com.android.permissioncontroller:id/permission_allow_button')
+2026-08-18 13:41:41 [INFO    ] login_page.py:43 — Opening profile tab
+2026-08-18 13:41:42 [INFO    ] login_page.py:53 — Profile tab open attempt 1/2
+2026-08-18 13:41:44 [INFO    ] base_page.py:173 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-18 13:41:46 [INFO    ] base_page.py:140 — wait_for_any_visible matched: ('class name', 'android.widget.EditText')
+2026-08-18 13:41:46 [INFO    ] login_page.py:78 — Profile tab opened (element click, verified)
+2026-08-18 13:41:46 [INFO    ] login_page.py:238 — Clicking continue button
+2026-08-18 13:41:47 [INFO    ] base_page.py:173 — Clicked: ('-android uiautomator', 'new UiSelector().textContains("Continue")')
+2026-08-18 13:41:47 [INFO    ] login_page.py:248 — Continue button clicked
+2026-08-18 13:41:47 [INFO    ] login_page.py:276 — Entering mobile number: 9876543210
+2026-08-18 13:41:47 [INFO    ] base_page.py:209 — Entered text '9876543210' into ('class name', 'android.widget.EditText')
+2026-08-18 13:41:47 [INFO    ] base_page.py:287 — Keyboard hidden.
+2026-08-18 13:41:48 [INFO    ] login_page.py:298 — Mobile number entered
+2026-08-18 13:41:48 [INFO    ] login_page.py:323 — Clicking proceed button
+2026-08-18 13:41:48 [INFO    ] base_page.py:173 — Clicked: ('accessibility id', 'Proceed')
+2026-08-18 13:41:48 [INFO    ] login_page.py:333 — Proceed button clicked
+2026-08-18 13:41:48 [INFO    ] login_page.py:361 — Entering OTP: 1111
+2026-08-18 13:41:50 [WARNING ] base_page.py:213 — Retry send_keys 1/3 for ('class name', 'android.widget.EditText'): StaleElementReferenceException
+2026-08-18 13:41:52 [INFO    ] base_page.py:209 — Entered text '1111' into ('class name', 'android.widget.EditText')
+2026-08-18 13:41:52 [INFO    ] base_page.py:287 — Keyboard hidden.
+2026-08-18 13:41:52 [INFO    ] login_page.py:380 — OTP entered successfully
+2026-08-18 13:41:52 [INFO    ] login_page.py:466 — Waiting for OTP verification outcome (sheet closes = success, sheet stays open = invalid)...
+2026-08-18 13:41:52 [INFO    ] login_page.py:480 — Login sheet indicator present at start: True
+2026-08-18 13:42:22 [WARNING ] login_page.py:517 — Timeout with OTP sheet still open -> treating as INVALID OTP (toast text: 'None')
+2026-08-18 13:42:23 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/invalid_otp_toast_20260818_134222.png
+2026-08-18 13:42:23 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/invalid_otp_toast_20260818_134223.xml
+2026-08-18 13:42:23 [ERROR   ] login_page.py:733 — Login flow failed: Login failed - invalid OTP (toast shown: '(sheet remained open, no toast text captured)')
+2026-08-18 13:42:23 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/login_failed_20260818_134223.png
+2026-08-18 13:42:23 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/login_failed_20260818_134223.xml
+2026-08-18 13:42:23 [INFO    ] test_login.py:114 — INVALID OTP VALIDATION SUCCESS
+2026-08-18 13:42:23 [INFO    ] test_login.py:135 — ========== LOGIN TEST END ==========
+2026-08-18 13:42:23 [INFO    ] conftest.py:460 — Closing driver session.

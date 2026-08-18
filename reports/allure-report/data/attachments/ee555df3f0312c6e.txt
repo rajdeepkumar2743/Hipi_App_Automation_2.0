@@ -1,0 +1,51 @@
+2026-08-14 16:21:07 [INFO    ] conftest.py:253 — ==================================================
+2026-08-14 16:21:07 [INFO    ] conftest.py:254 — DRIVER SETUP START
+2026-08-14 16:21:07 [INFO    ] conftest.py:255 — ==================================================
+2026-08-14 16:21:07 [INFO    ] conftest.py:141 — Driver creation attempt 1/2
+2026-08-14 16:21:07 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-14 16:21:07 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-14 16:21:07 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
+2026-08-14 16:21:07 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
+2026-08-14 16:21:07 [INFO    ] driver_factory.py:151 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-14 16:21:21 [INFO    ] driver_factory.py:112 — App launched by driver. Waiting for stabilization...
+2026-08-14 16:21:23 [INFO    ] driver_factory.py:115 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-14 16:21:23 [INFO    ] conftest.py:264 — Driver created successfully.
+2026-08-14 16:21:27 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-14 16:21:30 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-14 16:21:31 [INFO    ] conftest.py:179 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-14 16:21:31 [INFO    ] conftest.py:277 — DRIVER SETUP COMPLETE
+2026-08-14 16:21:31 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-14 16:21:31 [INFO    ] base_test.py:58 — login_and_reach_feed: START
+2026-08-14 16:21:31 [INFO    ] base_test.py:30 — Logging in as default test user.
+2026-08-14 16:21:31 [INFO    ] login_page.py:580 — ========== LOGIN FLOW START ==========
+2026-08-14 16:21:32 [INFO    ] login_page.py:43 — Opening profile tab
+2026-08-14 16:21:33 [INFO    ] login_page.py:53 — Profile tab open attempt 1/2
+2026-08-14 16:21:34 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Profile']]")
+2026-08-14 16:21:40 [ERROR   ] base_page.py:92 — None of the candidate locators became visible within 6s. Candidates: [('-android uiautomator', 'new UiSelector().textContains("Continue")'), ('class name', 'android.widget.EditText')]. Last error: None
+2026-08-14 16:21:41 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/wait_for_any_visible_failed_20260814_162140.png
+2026-08-14 16:21:41 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/wait_for_any_visible_failed_20260814_162141.xml
+2026-08-14 16:21:41 [INFO    ] login_page.py:201 — Already logged in — 'Edit Profile' visible. noReset=true preserved a previous session. Navigating to home feed.
+2026-08-14 16:21:41 [INFO    ] base_page.py:110 — Clicked: ('xpath', "//android.view.View[@clickable='true'][.//android.widget.TextView[@text='Home']]")
+2026-08-14 16:21:41 [INFO    ] login_page.py:213 — Navigated to home tab.
+2026-08-14 16:21:41 [INFO    ] login_page.py:597 — ========== LOGIN SKIPPED (ALREADY LOGGED IN) ==========
+2026-08-14 16:21:41 [INFO    ] login_page.py:537 — Validating home page
+2026-08-14 16:21:44 [INFO    ] login_page.py:547 — Home page displayed (exo_content_frame visible)
+2026-08-14 16:21:44 [INFO    ] base_test.py:63 — login_and_reach_feed: COMPLETE
+2026-08-14 16:21:44 [INFO    ] feed_page.py:630 — Opening three-dots menu
+2026-08-14 16:21:47 [INFO    ] base_page.py:110 — Clicked: ('-android uiautomator', 'new UiSelector().className("android.widget.Button").instance(4)')
+2026-08-14 16:21:57 [ERROR   ] base_page.py:50 — Element not visible after 10s: ('xpath', "//*[@resource-id='com.zee5.hipi:id/clBottomSheet' or (@text='Cancel' and @package='com.zee5.hipi' and @clickable='true')]")
+2026-08-14 16:22:01 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/element_not_visible_//*[@resource-id='com.zee5.hipi:id/clBottomSheet' or (@text='Cancel' and @package='com.zee5.hipi' and @clickable='true')]_20260814_162157.png
+2026-08-14 16:22:01 [ERROR   ] screenshot_utils.py:81 — Page source save failed: [Errno 2] No such file or directory: "reports/screenshots/element_not_visible_//*[@resource-id='com.zee5.hipi:id/clBottomSheet' or (@text='Cancel' and @package='com.zee5.hipi' and @clickable='true')]_20260814_162201.xml"
+2026-08-14 16:22:01 [ERROR   ] feed_page.py:652 — Open three dots failed: Message: 
+Stacktrace:
+NoSuchElementError: An element could not be located on the page using the given search parameters.
+    at AndroidUiautomator2Driver.findElOrEls (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/find.js:62:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.findElOrElsWithProcessing (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:12:16)
+    at async AndroidUiautomator2Driver.findElement (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/basedriver/commands/find.js:27:16)
+2026-08-14 16:22:04 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/open_three_dots_failed_20260814_162201.png
+2026-08-14 16:22:05 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/open_three_dots_failed_20260814_162204.xml
+2026-08-14 16:22:08 [INFO    ] screenshot_utils.py:54 — Screenshot saved: reports/screenshots/test_three_dots_close_via_cross_20260814_162205.png
+2026-08-14 16:22:08 [INFO    ] screenshot_utils.py:77 — Page source saved: reports/screenshots/test_three_dots_close_via_cross_20260814_162208.xml
+2026-08-14 16:22:08 [ERROR   ] conftest.py:381 — Test FAILED: test_three_dots_close_via_cross
+2026-08-14 16:22:08 [INFO    ] conftest.py:288 — Closing driver session.

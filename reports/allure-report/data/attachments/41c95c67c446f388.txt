@@ -1,0 +1,66 @@
+2026-08-14 17:41:05 [INFO    ] conftest.py:270 — ==================================================
+2026-08-14 17:41:05 [INFO    ] conftest.py:271 — DRIVER SETUP START
+2026-08-14 17:41:05 [INFO    ] conftest.py:272 — ==================================================
+2026-08-14 17:41:05 [INFO    ] conftest.py:158 — Driver creation attempt 1/3
+2026-08-14 17:41:06 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-14 17:41:06 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-14 17:41:06 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
+2026-08-14 17:41:06 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
+2026-08-14 17:41:06 [INFO    ] driver_factory.py:151 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-14 17:41:06 [ERROR   ] conftest.py:166 — Attempt 1 failed: Message: Unable to resolve the launchable activity of 'com.zee5.hipi'. Original error: No activity found
+Stacktrace:
+UnknownError: Unable to resolve the launchable activity of 'com.zee5.hipi'. Original error: No activity found
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Unable to resolve the launchable activity of 'com.zee5.hipi'. Original error: No activity found
+    at ADB.resolveLaunchableActivity (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/app-commands.js:119:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getLaunchInfo (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/device/common.js:190:23)
+    at async /Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:382:23
+2026-08-14 17:41:06 [INFO    ] conftest.py:174 — Waiting 3s before retry...
+2026-08-14 17:41:09 [INFO    ] conftest.py:158 — Driver creation attempt 2/3
+2026-08-14 17:41:10 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-14 17:41:10 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-14 17:41:10 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
+2026-08-14 17:41:10 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
+2026-08-14 17:41:10 [INFO    ] driver_factory.py:151 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-14 17:41:10 [ERROR   ] conftest.py:166 — Attempt 2 failed: Message: Unable to resolve the launchable activity of 'com.zee5.hipi'. Original error: No activity found
+Stacktrace:
+UnknownError: Unable to resolve the launchable activity of 'com.zee5.hipi'. Original error: No activity found
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Unable to resolve the launchable activity of 'com.zee5.hipi'. Original error: No activity found
+    at ADB.resolveLaunchableActivity (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/app-commands.js:119:11)
+    at async AndroidUiautomator2Driver.getLaunchInfo (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/device/common.js:190:23)
+    at async /Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:382:23
+2026-08-14 17:41:10 [INFO    ] conftest.py:174 — Waiting 3s before retry...
+2026-08-14 17:41:13 [INFO    ] conftest.py:158 — Driver creation attempt 3/3
+2026-08-14 17:41:14 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-14 17:41:14 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-14 17:41:14 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
+2026-08-14 17:41:14 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
+2026-08-14 17:41:14 [INFO    ] driver_factory.py:151 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-14 17:41:14 [ERROR   ] conftest.py:166 — Attempt 3 failed: Message: Unable to resolve the launchable activity of 'com.zee5.hipi'. Original error: No activity found
+Stacktrace:
+UnknownError: Unable to resolve the launchable activity of 'com.zee5.hipi'. Original error: No activity found
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Unable to resolve the launchable activity of 'com.zee5.hipi'. Original error: No activity found
+    at ADB.resolveLaunchableActivity (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/app-commands.js:119:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getLaunchInfo (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/device/common.js:190:23)
+    at async /Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:382:23
+2026-08-14 17:41:14 [ERROR   ] conftest.py:298 — Driver fixture setup failed: Driver creation failed after 3 attempts: Message: Unable to resolve the launchable activity of 'com.zee5.hipi'. Original error: No activity found
+Stacktrace:
+UnknownError: Unable to resolve the launchable activity of 'com.zee5.hipi'. Original error: No activity found
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Unable to resolve the launchable activity of 'com.zee5.hipi'. Original error: No activity found
+    at ADB.resolveLaunchableActivity (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/app-commands.js:119:11)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.getLaunchInfo (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-android-driver/build/lib/commands/device/common.js:190:23)
+    at async /Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:382:23

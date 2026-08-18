@@ -1,0 +1,13 @@
+2026-08-18 11:26:30 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-18 11:26:30 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-18 11:26:30 [INFO    ] login_page.py:556 — Validating home page
+2026-08-18 11:26:30 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-18 11:26:30 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-18 11:26:30 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-18 11:26:31 [INFO    ] feed_page.py:913 — Swiping to next video
+2026-08-18 11:26:36 [INFO    ] gestures.py:102 — Swipe up performed
+2026-08-18 11:26:47 [WARNING ] base_page.py:321 — Page source did not change within timeout.
+2026-08-18 11:26:47 [INFO    ] feed_page.py:934 — Swiped to next video
+2026-08-18 11:26:51 [INFO    ] screenshot_utils.py:60 — Screenshot saved: reports/screenshots/test_swipe_multiple_reels_20260818_112650.png
+2026-08-18 11:26:51 [INFO    ] screenshot_utils.py:83 — Page source saved: reports/screenshots/test_swipe_multiple_reels_20260818_112651.xml
+2026-08-18 11:26:51 [ERROR   ] conftest.py:602 — Test FAILED: test_swipe_multiple_reels

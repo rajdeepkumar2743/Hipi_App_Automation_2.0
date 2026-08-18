@@ -1,0 +1,59 @@
+2026-08-12 13:32:26 [INFO    ] conftest.py:227 — ==================================================
+2026-08-12 13:32:26 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-12 13:32:26 [INFO    ] conftest.py:229 — ==================================================
+2026-08-12 13:32:26 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-12 13:32:26 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 13:32:26 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 13:32:26 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 13:32:26 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 13:32:26 [INFO    ] driver_factory.py:140 — App Package: com.zee5.hipi
+2026-08-12 13:32:26 [INFO    ] driver_factory.py:141 — App Activity: .MainActivity
+2026-08-12 13:32:30 [ERROR   ] conftest.py:123 — Attempt 1 failed: Message: Cannot start the 'com.zee5.hipi' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.MainActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+Stacktrace:
+UnknownError: Cannot start the 'com.zee5.hipi' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.MainActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Cannot start the 'com.zee5.hipi' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.MainActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at ADB.startApp (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/app-commands.js:612:15)
+    at async AndroidUiautomator2Driver.ensureAppStarts (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:588:9)
+    at async AndroidUiautomator2Driver.performSessionPostExecSetup (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:443:13)
+    at async AndroidUiautomator2Driver.startUiAutomator2Session (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:492:9)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:249:28)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 13:32:30 [INFO    ] conftest.py:131 — Waiting 10s before retry...
+2026-08-12 13:32:40 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-12 13:32:40 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-12 13:32:40 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-12 13:32:40 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-12 13:32:40 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-12 13:32:40 [INFO    ] driver_factory.py:140 — App Package: com.zee5.hipi
+2026-08-12 13:32:40 [INFO    ] driver_factory.py:141 — App Activity: .MainActivity
+2026-08-12 13:32:44 [ERROR   ] conftest.py:123 — Attempt 2 failed: Message: Cannot start the 'com.zee5.hipi' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.MainActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+Stacktrace:
+UnknownError: Cannot start the 'com.zee5.hipi' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.MainActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Cannot start the 'com.zee5.hipi' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.MainActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at ADB.startApp (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/app-commands.js:612:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.ensureAppStarts (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:588:9)
+    at async AndroidUiautomator2Driver.performSessionPostExecSetup (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:443:13)
+    at async AndroidUiautomator2Driver.startUiAutomator2Session (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:492:9)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:249:28)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)
+2026-08-12 13:32:44 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: Message: Cannot start the 'com.zee5.hipi' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.MainActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+Stacktrace:
+UnknownError: Cannot start the 'com.zee5.hipi' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.MainActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at getResponseForW3CError (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/errors.js:824:36)
+    at asyncHandler (/opt/homebrew/lib/node_modules/appium/node_modules/@appium/base-driver/build/lib/protocol/protocol.js:430:77)
+The above error is caused by
+Error: Cannot start the 'com.zee5.hipi' application. Consider checking the driver's troubleshooting documentation. Original error: Activity name '.MainActivity' used to start the app doesn't exist or cannot be launched! Make sure it exists and is a launchable activity
+    at ADB.startApp (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/node_modules/appium-adb/build/lib/tools/app-commands.js:612:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async AndroidUiautomator2Driver.ensureAppStarts (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:588:9)
+    at async AndroidUiautomator2Driver.performSessionPostExecSetup (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:443:13)
+    at async AndroidUiautomator2Driver.startUiAutomator2Session (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:492:9)
+    at async AndroidUiautomator2Driver.createSession (/Users/vc.rajdeep.kumar/.appium/node_modules/appium-uiautomator2-driver/build/lib/driver.js:249:28)
+    at async AppiumDriver.createSession (/opt/homebrew/lib/node_modules/appium/build/lib/appium.js:324:43)

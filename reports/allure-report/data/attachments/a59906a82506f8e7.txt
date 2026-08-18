@@ -1,0 +1,20 @@
+2026-08-17 13:42:49 [INFO    ] conftest.py:291 — ==================================================
+2026-08-17 13:42:49 [INFO    ] conftest.py:292 — DRIVER SETUP START
+2026-08-17 13:42:49 [INFO    ] conftest.py:293 — ==================================================
+2026-08-17 13:42:49 [INFO    ] conftest.py:158 — Driver creation attempt 1/3
+2026-08-17 13:42:50 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-17 13:42:50 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-17 13:42:50 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
+2026-08-17 13:42:50 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
+2026-08-17 13:42:50 [INFO    ] driver_factory.py:151 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-17 13:42:53 [INFO    ] driver_factory.py:112 — App launched by driver. Waiting for stabilization...
+2026-08-17 13:42:55 [INFO    ] driver_factory.py:115 — ========== DRIVER CREATED SUCCESSFULLY ==========
+2026-08-17 13:42:55 [INFO    ] conftest.py:302 — Driver created successfully.
+2026-08-17 13:42:58 [INFO    ] popup_handler.py:122 — Checking for 'Get Started' screen...
+2026-08-17 13:43:01 [INFO    ] popup_handler.py:134 — 'Get Started' screen not present — skipping.
+2026-08-17 13:43:01 [INFO    ] conftest.py:217 — App readiness probe: HiPi is in foreground (com.zee5.hipi).
+2026-08-17 13:43:01 [INFO    ] conftest.py:315 — DRIVER SETUP COMPLETE
+2026-08-17 13:43:01 [INFO    ] base_test.py:20 — BaseTest setup completed.
+2026-08-17 13:43:01 [INFO    ] test_login.py:55 — ========== LOGIN TEST START ==========
+2026-08-17 13:43:01 [INFO    ] test_login.py:59 — TEST TYPE: invalid_otp
+2026-08-17 13:43:01 [INFO    ] conftest.py:326 — Closing driver session.

@@ -1,0 +1,11 @@
+2026-08-17 17:40:50 [INFO    ] base_test.py:137 — BaseFeedTest setup completed (session-scoped, already logged in).
+2026-08-17 17:40:50 [INFO    ] base_test.py:151 — login_and_reach_feed: START (session-scoped)
+2026-08-17 17:40:50 [INFO    ] login_page.py:556 — Validating home page
+2026-08-17 17:40:50 [INFO    ] login_page.py:566 — Home page displayed (exo_content_frame visible)
+2026-08-17 17:40:50 [INFO    ] base_test.py:154 — login_and_reach_feed: already on home feed (session reused)
+2026-08-17 17:40:50 [INFO    ] base_test.py:155 — login_and_reach_feed: COMPLETE
+2026-08-17 17:40:50 [INFO    ] feed_page.py:116 — Opening creator's profile
+2026-08-17 17:40:51 [INFO    ] gestures.py:29 — Tap performed at X:324 Y:1967
+2026-08-17 17:40:51 [INFO    ] base_page.py:318 — Page source changed.
+2026-08-17 17:40:51 [INFO    ] feed_page.py:147 — Creator profile opened (coordinate tap)
+2026-08-17 17:40:52 [INFO    ] test_feed.py:457 — TEST PASSED: Open creator profile

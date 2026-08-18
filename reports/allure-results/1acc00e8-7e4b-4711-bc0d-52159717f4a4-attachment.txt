@@ -1,0 +1,19 @@
+2026-08-13 11:03:19 [INFO    ] conftest.py:227 — ==================================================
+2026-08-13 11:03:19 [INFO    ] conftest.py:228 — DRIVER SETUP START
+2026-08-13 11:03:19 [INFO    ] conftest.py:229 — ==================================================
+2026-08-13 11:03:19 [INFO    ] conftest.py:116 — Driver creation attempt 1/2
+2026-08-13 11:03:19 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 11:03:19 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 11:03:19 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 11:03:19 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 11:03:19 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 11:21:35 [ERROR   ] conftest.py:123 — Attempt 1 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 11:21:35 [INFO    ] conftest.py:131 — Waiting 3s before retry...
+2026-08-13 11:37:26 [INFO    ] conftest.py:116 — Driver creation attempt 2/2
+2026-08-13 11:37:26 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
+2026-08-13 11:37:26 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
+2026-08-13 11:37:26 [INFO    ] driver_factory.py:132 — Device Name: Android Emulator
+2026-08-13 11:37:26 [INFO    ] driver_factory.py:133 — UDID: emulator-5554
+2026-08-13 11:37:26 [INFO    ] driver_factory.py:147 — App Package: com.zee5.hipi (noReset=true, activity not set)
+2026-08-13 12:04:19 [ERROR   ] conftest.py:123 — Attempt 2 failed: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2026-08-13 12:04:19 [ERROR   ] conftest.py:255 — Driver fixture setup failed: Driver creation failed after 2 attempts: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
