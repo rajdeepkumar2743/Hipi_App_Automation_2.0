@@ -146,11 +146,6 @@ appium --address 127.0.0.1 --port 4723
 
 Create a `.env` file in the project root with the required values:
 
-```env
-TEST_PHONE=9876543210
-TEST_OTP=5186
-```
-
 > The project is designed to fail early with a clear credential error if these values are missing.
 
 ---
