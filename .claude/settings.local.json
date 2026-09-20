@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 *)",
+      "Bash(adb -s emulator-5554 shell settings get global airplane_mode_on)",
+      "Bash(adb -s emulator-5554 shell ping -c 2 -W 3 8.8.8.8)",
+      "Bash(adb -s emulator-5554 shell dumpsys connectivity)",
+      "Bash(adb devices *)",
+      "Bash(curl -s -m 3 http://127.0.0.1:4723/status)",
+      "Bash(adb -s emulator-5554 logcat -d)",
+      "Bash(adb -s emulator-5554 logcat -d -v time)",
+      "Bash(awk '$0 ~ /17:00:3[5-9]|17:00:4[0-9]|17:01:[01][0-9]/')",
+      "Bash(adb -s emulator-5554 shell svc data enable)",
+      "Bash(adb -s emulator-5554 shell svc wifi enable)",
+      "Bash(kill 38436 38726)",
+      "Bash(kill 38425 38717)",
+      "Bash(pytest --collect-only -q --device emulator --env qa)"
+    ]
+  }
+}

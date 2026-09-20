@@ -1,8 +1,0 @@
-2026-08-17 16:36:41 [INFO    ] driver_factory.py:53 — ========== DRIVER CREATION START ==========
-2026-08-17 16:36:41 [INFO    ] driver_factory.py:70 — Device: emulator | Env: qa | Platform: Android
-2026-08-17 16:36:41 [INFO    ] driver_factory.py:136 — Device Name: Android Emulator
-2026-08-17 16:36:41 [INFO    ] driver_factory.py:137 — UDID: emulator-5554
-2026-08-17 16:36:41 [INFO    ] driver_factory.py:148 — App Package: com.zee5.hipi
-2026-08-17 16:36:41 [INFO    ] driver_factory.py:149 — App Activity: com.creatoreconomy.MainActivity
-2026-08-17 16:37:03 [INFO    ] driver_factory.py:112 — App launched by driver. Waiting for stabilization...
-2026-08-17 16:37:05 [INFO    ] driver_factory.py:115 — ========== DRIVER CREATED SUCCESSFULLY ==========
