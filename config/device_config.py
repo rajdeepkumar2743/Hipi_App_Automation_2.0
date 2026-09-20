@@ -36,7 +36,7 @@ DEVICES = {
     "real_device_1": {
         "platform":   "Android",
         "deviceName": "Android",
-        "udid":       "BYRW59BQR8UO4D5H",
+        "udid":       "xxxxxxxxxxxxxxxx",
     },
 
     # =====================================================
